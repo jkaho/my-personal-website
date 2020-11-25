@@ -209,6 +209,18 @@ form {
         display: block;
         margin: 25px auto;
     }
+
+    .contact {
+        display: none;
+    }
+
+    .hide {
+        display: inline-flex;
+    }
+
+    .hide h5 {
+        font-size: 25px;
+    }
 }
 
 /* large devices (desktops, 992px and down) */
