@@ -138,6 +138,24 @@ form {
     font-family: 'Raleway', sans-serif;
 }
 
+.hide {
+    display: none;
+    margin: 0 5px;
+}
+
+.hide .social-media, .hide .email, .hide .post {
+    font-family: 'Raleway', sans-serif;
+    width: 220px;
+    height: 170px;
+    padding: 15px;
+    margin: 1px;
+}
+
+.hide ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 /* ---------------------MEDIA QUERIES--------------------- */
 
 /* small devices (landscape phones, 576px and down) */
