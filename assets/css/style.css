@@ -1,3 +1,11 @@
+.navbar-brand {
+    padding-bottom: 20px;
+}
+
+nav ul li {
+    font-family: 'Raleway', sans-serif;
+}
+
 footer .container {
     width: auto;
     max-width: 680px;
