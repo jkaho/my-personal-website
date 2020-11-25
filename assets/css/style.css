@@ -65,6 +65,19 @@ footer .logos img {
     padding-bottom: 85px;
 }
 
+.float-left img {
+    float: left;
+}
+
+.float-right img {
+    float: right;
+}
+
+.project img {
+    margin: 25px;
+}
+
+
 /* ---------------------MEDIA QUERIES--------------------- */
 
 /* small devices (landscape phones, 576px and down) */
