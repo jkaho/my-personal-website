@@ -112,6 +112,32 @@ form {
     color: rgb(177, 75, 75);
 }
 
+#contact-me h5 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+}
+
+#contact-me h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.contact {
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-bottom: 210px;
+}
+
+.contact ul {
+    font-family: 'Raleway', sans-serif;
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact p {
+    font-family: 'Raleway', sans-serif;
+}
+
 /* ---------------------MEDIA QUERIES--------------------- */
 
 /* small devices (landscape phones, 576px and down) */
