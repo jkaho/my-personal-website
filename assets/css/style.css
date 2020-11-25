@@ -1,3 +1,6 @@
+/* -GENERAL- */
+
+/* navbar */
 .navbar-brand {
     padding-bottom: 20px;
 }
@@ -6,11 +9,13 @@ nav ul li {
     font-family: 'Raleway', sans-serif;
 }
 
+/* container */
 main .container {
     padding: 40px 0;
     margin: 0 auto;
 }
 
+/* page headings */
 h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 60px;
@@ -19,6 +24,7 @@ h1 {
     padding-bottom: 30px;
 }
 
+/* sticky footer */
 footer .container {
     width: auto;
     max-width: 680px;
@@ -44,19 +50,26 @@ footer .logos img {
     margin-left: 10px;
 }
 
+/* -ABOUT ME- */
+
+/* image */
 #about-me img {
     display: block;
     margin: 20px auto;
     border-radius: 100%;
 }
 
+/* text */
 #about-me p {
     padding-top: 30px;
     padding-bottom: 85px;
 }
 
+/* ---------------------MEDIA QUERIES--------------------- */
 
+/* small devices (landscape phones, 576px and down) */
 @media (max-width: 576px) { 
+    /* sticky footer */
     footer .logos {
         float: right;
         margin-right: 50px;
@@ -70,7 +83,9 @@ footer .logos img {
     
 }
 
+/* medium devices (tablets, 768px and down) */
 @media (max-width: 768px) { 
+    /* general */
     nav img {
         width: 200px;
         height: 50px;
@@ -80,6 +95,7 @@ footer .logos img {
         font-size: 35px;
     }
     
+    /* about-me */
     #about-me img {
         width: 200px;
         height: 200px;
