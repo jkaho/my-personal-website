@@ -97,6 +97,20 @@ footer .logos img {
     margin: 25px;
 }
 
+#contact-me h2 {
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+}
+
+form {
+    padding-top: 30px;
+    padding-bottom: 80px;
+    margin: 0 auto;
+}
+
+.asterix {
+    color: rgb(177, 75, 75);
+}
 
 /* ---------------------MEDIA QUERIES--------------------- */
 
