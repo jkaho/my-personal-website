@@ -65,6 +65,9 @@ footer .logos img {
     padding-bottom: 85px;
 }
 
+/* -PORTFOLIO- */
+
+/* project headings */
 .portfolio h3 {
     font-family: 'Raleway', sans-serif;
     padding-top: 30px;
@@ -75,6 +78,7 @@ footer .logos img {
     padding-left: 470px;
 }
 
+/* images */
 .float-left img {
     float: left;
 }
@@ -87,6 +91,7 @@ footer .logos img {
     margin: 25px;
 }
 
+/* text */
 .project p {
     padding-top: 50px;
     margin: 25px;
@@ -123,7 +128,7 @@ footer .logos img {
         font-size: 35px;
     }
     
-    /* about-me */
+    /* about me */
     #about-me img {
         width: 200px;
         height: 200px;
@@ -136,6 +141,7 @@ footer .logos img {
         margin-bottom: 100px;
     }
 
+    /* portfolio */
     .project p {
         text-align: center;
     } 
@@ -147,7 +153,9 @@ footer .logos img {
     }
 }
 
+/* large devices (desktops, 992px and down) */
 @media (max-width: 992px) { 
+    /* portfolio */
     .portfolio h3 {
         font-size: 25px;
         padding-top: 20px;
@@ -166,7 +174,10 @@ footer .logos img {
     }
 }
 
+/* extra-large devices (desktops, 992px and up) */
 @media (min-width: 1200px) { 
+    /* portfolio */
     #project-2 h3 {
         padding-left: 620px;
     }
+}
