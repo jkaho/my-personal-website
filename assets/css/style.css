@@ -28,3 +28,14 @@ footer .container {
 .footer {
     background-color: #f5f5f5;
 }
+
+#about-me img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 100%;
+}
+
+#about-me p {
+    padding-top: 30px;
+    padding-bottom: 85px;
+}
