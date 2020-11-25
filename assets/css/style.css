@@ -11,6 +11,14 @@ main .container {
     margin: 0 auto;
 }
 
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
 footer .container {
     width: auto;
     max-width: 680px;
