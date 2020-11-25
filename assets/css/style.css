@@ -65,6 +65,16 @@ footer .logos img {
     padding-bottom: 85px;
 }
 
+.portfolio h3 {
+    font-family: 'Raleway', sans-serif;
+    padding-top: 30px;
+    padding-left: 25px;
+}
+
+#project-2 h3 {
+    padding-left: 470px;
+}
+
 .float-left img {
     float: left;
 }
@@ -74,6 +84,11 @@ footer .logos img {
 }
 
 .project img {
+    margin: 25px;
+}
+
+.project p {
+    padding-top: 50px;
     margin: 25px;
 }
 
