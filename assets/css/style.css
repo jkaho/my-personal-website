@@ -1,4 +1,4 @@
-/* -GENERAL- */
+/* -GENERAL STYLES- */
 
 /* navbar */
 .navbar-brand {
@@ -50,7 +50,7 @@ footer .logos img {
     margin-left: 10px;
 }
 
-/* -ABOUT ME- */
+/* -ABOUT ME PAGE- */
 
 /* image */
 #about-me img {
@@ -65,7 +65,7 @@ footer .logos img {
     padding-bottom: 85px;
 }
 
-/* -PORTFOLIO- */
+/* -PORTFOLIO PAGE- */
 
 /* project headings */
 .portfolio h3 {
@@ -97,11 +97,15 @@ footer .logos img {
     margin: 25px;
 }
 
+/* -CONTACT ME PAGE- */
+
+/* page heading */
 #contact-me h2 {
     font-size: 40px;
     font-family: 'Raleway', sans-serif;
 }
 
+/* form */
 form {
     padding-top: 30px;
     padding-bottom: 80px;
@@ -112,6 +116,7 @@ form {
     color: rgb(177, 75, 75);
 }
 
+/* 'Get In Touch' general styles */
 #contact-me h5 {
     font-family: 'Raleway', sans-serif;
     font-size: 30px;
@@ -122,22 +127,20 @@ form {
     font-weight: bold;
 }
 
+#contact-me ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* 'Get In Touch' beside form (shows when screen size > 768px) */
 .contact {
+    font-family: 'Raleway', sans-serif;
     padding-top: 30px;
     padding-left: 100px;
     padding-bottom: 210px;
 }
 
-.contact ul {
-    font-family: 'Raleway', sans-serif;
-    list-style-type: none;
-    padding: 0;
-}
-
-.contact p {
-    font-family: 'Raleway', sans-serif;
-}
-
+/* 'Get In Touch' below form (shows when screen size < 768px) */
 .hide {
     display: none;
     margin: 0 5px;
@@ -149,11 +152,6 @@ form {
     height: 170px;
     padding: 15px;
     margin: 1px;
-}
-
-.hide ul {
-    list-style-type: none;
-    padding: 0;
 }
 
 /* ---------------------MEDIA QUERIES--------------------- */
@@ -171,12 +169,11 @@ form {
         width: 20px;
         height: 20px;
     }
-    
 }
 
 /* medium devices (tablets, 768px and down) */
 @media (max-width: 768px) { 
-    /* general */
+    /* general styles */
     nav img {
         width: 200px;
         height: 50px;
@@ -186,7 +183,7 @@ form {
         font-size: 35px;
     }
     
-    /* about me */
+    /* about me page */
     #about-me img {
         width: 200px;
         height: 200px;
@@ -199,7 +196,7 @@ form {
         margin-bottom: 100px;
     }
 
-    /* portfolio */
+    /* portfolio page */
     .project p {
         text-align: center;
     } 
@@ -210,6 +207,7 @@ form {
         margin: 25px auto;
     }
 
+    /* contact me page */
     #contact-me h2 {
         font-size: 40px;
         text-align: center;
@@ -220,7 +218,7 @@ form {
         padding-left: 20px;
         padding-right: 20px;
     }
-    
+
     .contact {
         display: none;
     }
@@ -236,7 +234,7 @@ form {
 
 /* large devices (desktops, 992px and down) */
 @media (max-width: 992px) { 
-    /* portfolio */
+    /* portfolio page */
     .portfolio h3 {
         font-size: 25px;
         padding-top: 20px;
@@ -257,7 +255,7 @@ form {
 
 /* extra-large devices (desktops, 992px and up) */
 @media (min-width: 1200px) { 
-    /* portfolio */
+    /* portfolio page */
     #project-2 h3 {
         padding-left: 620px;
     }
