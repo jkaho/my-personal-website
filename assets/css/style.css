@@ -145,11 +145,6 @@ form {
 
 /* ---------------------MEDIA QUERIES--------------------- */
 
-/* small devices (landscape phones, 576px and down) */
-@media (max-width: 576px) { 
-   
-}
-
 /* medium devices (tablets, 768px and down) */
 @media (max-width: 768px) { 
     /* general styles */
