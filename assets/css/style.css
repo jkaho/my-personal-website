@@ -5,7 +5,8 @@
     padding-bottom: 20px;
 }
 
-nav ul li {
+nav ul {
+    margin-right: 100px;
     font-family: 'Raleway', sans-serif;
 }
 
