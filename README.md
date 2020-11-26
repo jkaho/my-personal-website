@@ -6,7 +6,7 @@ This repository contains the source code for my first basic personal website. It
 
 ## Motivations
 
-The main objective of this project was to create the foundation of a personal website with a responsive layout by utilising the Bootstrap grid system to ensure consistent appearance and functionality across various viewports. 
+The main objective of this project was to create the foundation of a personal website with a responsive layout, by utilising the Bootstrap grid system, to ensure consistent appearance and functionality across various viewports. 
 
 ## Screenshots 
 
