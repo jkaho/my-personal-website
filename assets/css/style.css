@@ -27,7 +27,6 @@ h1 {
 /* sticky footer */
 footer .container {
     width: auto;
-    max-width: 680px;
     padding: 0 15px;
 }
 
@@ -38,15 +37,6 @@ footer .container {
 footer .made-by {
     font-family: 'Raleway', sans-serif;
     padding-top: 5px;
-}
-
-footer .logos {
-    float: right;
-    margin-right: 50px;
-}
-
-footer .logos img {
-    margin-left: 10px;
 }
 
 /* -ABOUT ME PAGE- */
