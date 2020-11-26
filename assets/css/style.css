@@ -37,7 +37,6 @@ footer .container {
 
 footer .made-by {
     font-family: 'Raleway', sans-serif;
-    float: left;
     padding-top: 5px;
 }
 
@@ -158,17 +157,7 @@ form {
 
 /* small devices (landscape phones, 576px and down) */
 @media (max-width: 576px) { 
-    /* sticky footer */
-    footer .logos {
-        float: right;
-        margin-right: 50px;
-    }
-    
-    footer .logos img {
-        margin-left: 10px;
-        width: 20px;
-        height: 20px;
-    }
+   
 }
 
 /* medium devices (tablets, 768px and down) */
@@ -183,6 +172,10 @@ form {
         font-size: 35px;
     }
     
+    footer .made-by {
+        font-size: 12px;
+    }
+
     /* about me page */
     #about-me img {
         width: 200px;
