@@ -9,6 +9,16 @@
     padding-top: 75%;
 }
 
+.day {
+    animation: day 2s forwards;
+}
+
+@keyframes day {
+    to {
+        background: url("../images/general/bg-day.png");
+    }
+}
+
 #bg-dawn {
     width: 100vw;
 }
