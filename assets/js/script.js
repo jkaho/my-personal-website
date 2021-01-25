@@ -4,10 +4,12 @@ var dayBtn = $("#day-btn");
 var duskBtn = $("#dusk-btn");
 var darkBtn = $("#dark-btn");
 var doomBtn = $("#doom-btn");
+var themeBtnDiv = $("#theme-div");
 
 dawnBtn.on("click", function(event){
     event.preventDefault();
 
+    themeBtnDiv.css("background", "rgb(177, 75, 75)");
     dayBtn.attr("disabled", true);
     duskBtn.attr("disabled", true);
     darkBtn.attr("disabled", true);
@@ -28,6 +30,7 @@ dawnBtn.on("click", function(event){
 dayBtn.on("click", function(event){
     event.preventDefault();
 
+    themeBtnDiv.css("background", "rgb(75, 121, 177)");
     dawnBtn.attr("disabled", true);
     duskBtn.attr("disabled", true);
     darkBtn.attr("disabled", true);
@@ -48,6 +51,7 @@ dayBtn.on("click", function(event){
 duskBtn.on("click", function(event){
     event.preventDefault();
 
+    themeBtnDiv.css("background", "rgb(225, 153, 45)");
     dawnBtn.attr("disabled", true);
     dayBtn.attr("disabled", true);
     darkBtn.attr("disabled", true);
@@ -68,6 +72,7 @@ duskBtn.on("click", function(event){
 darkBtn.on("click", function(event){
     event.preventDefault();
 
+    themeBtnDiv.css("background", "rgb(124, 125, 171)");
     dawnBtn.attr("disabled", true);
     duskBtn.attr("disabled", true);
     dayBtn.attr("disabled", true);
@@ -88,6 +93,7 @@ darkBtn.on("click", function(event){
 doomBtn.on("click", function(event){
     event.preventDefault();
 
+    themeBtnDiv.css("background", "rgb(69, 67, 67)");
     dawnBtn.attr("disabled", true);
     duskBtn.attr("disabled", true);
     dayBtn.attr("disabled", true);
