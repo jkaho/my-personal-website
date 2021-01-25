@@ -39,6 +39,21 @@
     }
 }
 
+.dark {
+    animation: dark 2s forwards;
+}
+
+@keyframes dark {
+    to {
+        background: url("../images/general/bg-dark.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 0;
+        padding-top: 75%;
+    }
+}
+
 #theme-div {
     background: rgb(177, 75, 75);
     width: 270px;
