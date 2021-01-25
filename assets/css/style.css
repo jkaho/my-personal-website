@@ -15,7 +15,7 @@
 
 #theme-div {
     background: rgb(177, 75, 75);
-    width: 200px;
+    width: 270px;
     opacity: 50%;
     border-radius: 5px;
     padding: 4px 2px;
@@ -24,7 +24,7 @@
 
 .theme-btn {
     font-size: 12px;
-    width: 23%;
+    width: 18%;
     padding: 5px;
     background: none;
     border: none;
