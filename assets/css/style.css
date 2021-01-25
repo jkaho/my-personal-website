@@ -1,4 +1,7 @@
 /* -GENERAL STYLES- */
+body {
+    background: pink;
+}
 
 /* navbar */
 .navbar-brand {
@@ -11,8 +14,12 @@ nav ul {
 }
 
 /* container */
+main {
+    background: white;
+}
+
 main .container {
-    padding: 40px 0;
+    padding: 10px 0;
     margin: 0 auto;
 }
 
