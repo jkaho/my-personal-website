@@ -65,3 +65,24 @@ darkBtn.on("click", function(event){
     }, 2000) 
 })
 
+doomBtn.on("click", function(event){
+    event.preventDefault();
+
+    dawnBtn.attr("disabled", true);
+    duskBtn.attr("disabled", true);
+    dayBtn.attr("disabled", true);
+    darkBtn.attr("disabled", true);
+
+    background.attr("class", "doom");
+    setTimeout(function(){
+        background.attr("style", 
+        "background: url('./assets/images/general/bg-doom.png'); background-size: contain; background-repeat: no-repeat; width: 100%; height: 0; padding-top: 75%;"
+        );
+        dawnBtn.attr("disabled", false);
+        duskBtn.attr("disabled", false);
+        darkBtn.attr("disabled", false);
+        darkBtn.attr("disabled", false);
+    }, 2000) 
+})
+
+
