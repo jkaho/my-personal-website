@@ -1,9 +1,39 @@
 /* -GENERAL STYLES- */
-body {
-    background: pink;
+
+/* #bg {
+    background: url(/assets/images/general/bg-dawn.png);
+} */
+
+#bg-dawn {
+    width: 100vw;
+}
+
+#theme-div {
+    background: rgb(177, 75, 75);
+    opacity: 50%;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.theme-btn {
+    background: none;
+    border: none;
+    color: white;
+}
+
+.theme-btn:hover, .theme-btn:focus {
+    background: white;
+    outline: none;
+    border-radius: 5px;
+    color: rgb(153, 43, 43);
 }
 
 /* navbar */
+.navbar {
+    position: absolute;
+    z-index: 3;
+}
+
 .navbar-brand {
     padding-bottom: 20px;
 }
