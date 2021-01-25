@@ -15,12 +15,17 @@
 
 #theme-div {
     background: rgb(177, 75, 75);
+    width: 200px;
     opacity: 50%;
     border-radius: 5px;
-    padding: 5px;
+    padding: 4px 2px;
+    text-align: center;
 }
 
 .theme-btn {
+    font-size: 12px;
+    width: 23%;
+    padding: 5px;
     background: none;
     border: none;
     color: white;
