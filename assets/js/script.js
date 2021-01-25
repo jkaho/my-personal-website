@@ -5,6 +5,26 @@ var duskBtn = $("#dusk-btn");
 var darkBtn = $("#dark-btn");
 var doomBtn = $("#doom-btn");
 
+dawnBtn.on("click", function(event){
+    event.preventDefault();
+
+    dayBtn.attr("disabled", true);
+    duskBtn.attr("disabled", true);
+    darkBtn.attr("disabled", true);
+    doomBtn.attr("disabled", true);
+
+    background.attr("class", "dawn");   
+    setTimeout(function(){
+        background.attr("style", 
+        "background: url('./assets/images/general/bg-dawn.png'); background-size: contain; background-repeat: no-repeat; width: 100%; height: 0; padding-top: 75%;"
+        );
+        dayBtn.attr("disabled", false);
+        duskBtn.attr("disabled", false);
+        darkBtn.attr("disabled", false);
+        doomBtn.attr("disabled", false);
+    }, 2000) 
+})
+
 dayBtn.on("click", function(event){
     event.preventDefault();
 
@@ -80,7 +100,7 @@ doomBtn.on("click", function(event){
         );
         dawnBtn.attr("disabled", false);
         duskBtn.attr("disabled", false);
-        darkBtn.attr("disabled", false);
+        dayBtn.attr("disabled", false);
         darkBtn.attr("disabled", false);
     }, 2000) 
 })
