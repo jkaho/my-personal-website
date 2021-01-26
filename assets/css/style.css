@@ -1,12 +1,18 @@
 /* -GENERAL STYLES- */
 
+#bg-outer {
+    width: 100vw;
+    background: #FFE8EF;
+}
+
 #bg {
     background: url("../images/general/bg-dawn.png");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 100%;
+    width: 80%;
     height: 0;
-    padding-top: 75%;
+    padding-top: 60%;
+    margin: 0 auto;
 }
 
 .dawn {
