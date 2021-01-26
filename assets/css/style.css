@@ -385,6 +385,17 @@ form {
     }
 }
 
+@media (min-width: 768px) {
+    #bg-outer {
+        height: 450px;
+    }
+    
+    #bg {
+        width: 600px;
+        height: 450px;
+    }
+}
+
 /* large devices (desktops, 992px and down) */
 @media (max-width: 992px) { 
     /* portfolio page */
