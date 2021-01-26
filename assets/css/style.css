@@ -322,6 +322,12 @@ form {
 
 /* medium devices (tablets, 768px and down) */
 @media (max-width: 768px) { 
+    #bg {
+        width: 80%;
+        height: 0;
+        padding-top: 60%;
+    }
+
     /* general styles */
     nav img {
         width: 200px;
@@ -389,7 +395,7 @@ form {
     #bg-outer {
         height: 450px;
     }
-    
+
     #bg {
         width: 600px;
         height: 450px;
