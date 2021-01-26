@@ -19,14 +19,24 @@
     animation: dawn 2s forwards;
 }
 
+.dawn-outer {
+    animation: dawn-outer 2s forwards;
+}
+
 @keyframes dawn {
     to {
         background: url("../images/general/bg-dawn.png");
         background-size: contain;
         background-repeat: no-repeat;
-        width: 100%;
+        width: 80%;
         height: 0;
-        padding-top: 75%;
+        padding-top: 60%;
+    }
+}
+
+@keyframes dawn-outer {
+    to {
+        background: #FFE8EF;
     }
 }
 
@@ -34,14 +44,24 @@
     animation: day 2s forwards;
 }
 
+.day-outer {
+    animation: day-outer 2s forwards;
+}
+
 @keyframes day {
     to {
         background: url("../images/general/bg-day.png");
         background-size: contain;
         background-repeat: no-repeat;
-        width: 100%;
+        width: 80%;
         height: 0;
-        padding-top: 75%;
+        padding-top: 60%;
+    }
+}
+
+@keyframes day-outer {
+    to {
+        background: #95E4EC;
     }
 }
 
@@ -49,14 +69,24 @@
     animation: dusk 2s forwards;
 }
 
+.dusk-outer {
+    animation: dusk-outer 2s forwards;
+}
+
 @keyframes dusk {
     to {
         background: url("../images/general/bg-dusk.png");
         background-size: contain;
         background-repeat: no-repeat;
-        width: 100%;
+        width: 80%;
         height: 0;
-        padding-top: 75%;
+        padding-top: 60%;
+    }
+}
+
+@keyframes dusk-outer {
+    to {
+        background: #FFE76C;
     }
 }
 
@@ -64,14 +94,24 @@
     animation: dark 2s forwards;
 }
 
+.dark-outer {
+    animation: dark-outer 2s forwards;
+}
+
 @keyframes dark {
     to {
         background: url("../images/general/bg-dark.png");
         background-size: contain;
         background-repeat: no-repeat;
-        width: 100%;
+        width: 80%;
         height: 0;
-        padding-top: 75%;
+        padding-top: 60%;
+    }
+}
+
+@keyframes dark-outer {
+    to {
+        background: #08366D;
     }
 }
 
@@ -79,14 +119,24 @@
     animation: doom 2s forwards;
 }
 
+.doom-outer {
+    animation: doom-outer 2s forwards;
+}
+
 @keyframes doom {
     to {
         background: url("../images/general/bg-doom.png");
         background-size: contain;
         background-repeat: no-repeat;
-        width: 100%;
+        width: 80%;
         height: 0;
-        padding-top: 75%;
+        padding-top: 60%;
+    }
+}
+
+@keyframes doom-outer {
+    to {
+        background: #BDA5A0;
     }
 }
 
