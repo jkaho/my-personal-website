@@ -8,6 +8,17 @@ var bannerDiv = $("#bg-outer");
 var themeBtnDiv = $("#theme-div");
 var footerDiv = $(".footer");
 
+$(window).on("resize", function(){
+    if ($(window).width() > 768) {
+        background.css("width", "600px");
+        background.css("height", "450px");
+    } else {
+        background.css("width", "80%");
+        background.css("height", "0")
+        background.css("padding-top", "60%");
+    }
+})
+
 dawnBtn.on("click", function(event){
     event.preventDefault();
 
@@ -34,6 +45,7 @@ dawnBtn.on("click", function(event){
 
 dayBtn.on("click", function(event){
     event.preventDefault();
+    var windowSize = "";
 
     themeBtnDiv.css("background", "rgb(75, 121, 177)");
     footerDiv.css("background", "#95E4EC");
@@ -46,8 +58,18 @@ dayBtn.on("click", function(event){
     bannerDiv.attr("class", "day-outer");
     setTimeout(function(){
         background.attr("style", 
-        "background: url('./assets/images/general/bg-day.png'); background-size: contain; background-repeat: no-repeat; width: 80%; height: 0; padding-top: 60%;"
+        "background: url('./assets/images/general/bg-day.png'); background-size: contain; background-repeat: no-repeat"
         );
+
+        if ($(window).width() > 768) {
+            background.css("width", "600");
+            background.css("height", "450");
+        } else {
+            background.css("width", "80%");
+            background.css("height", "0")
+            background.css("padding-top", "60%");
+        }
+
         bannerDiv.css("background", "#95E4EC");
         dawnBtn.attr("disabled", false);
         duskBtn.attr("disabled", false);
