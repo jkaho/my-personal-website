@@ -33,8 +33,17 @@ dawnBtn.on("click", function(event){
     bannerDiv.attr("class", "dawn-outer");
     setTimeout(function(){
         background.attr("style", 
-        "background: url('./assets/images/general/bg-dawn.png'); background-size: contain; background-repeat: no-repeat; width: 80%; height: 0; padding-top: 60%;"
+        "background: url('./assets/images/general/bg-dawn.png'); background-size: contain; background-repeat: no-repeat"
         );
+        if ($(window).width() > 768) {
+            background.css("width", "600");
+            background.css("height", "450");
+        } else {
+            background.css("width", "80%");
+            background.css("height", "0")
+            background.css("padding-top", "60%");
+        }
+
         bannerDiv.css("background", "#FFE8EF");
         dayBtn.attr("disabled", false);
         duskBtn.attr("disabled", false);
@@ -45,7 +54,6 @@ dawnBtn.on("click", function(event){
 
 dayBtn.on("click", function(event){
     event.preventDefault();
-    var windowSize = "";
 
     themeBtnDiv.css("background", "rgb(75, 121, 177)");
     footerDiv.css("background", "#95E4EC");
@@ -60,7 +68,6 @@ dayBtn.on("click", function(event){
         background.attr("style", 
         "background: url('./assets/images/general/bg-day.png'); background-size: contain; background-repeat: no-repeat"
         );
-
         if ($(window).width() > 768) {
             background.css("width", "600");
             background.css("height", "450");
@@ -92,8 +99,17 @@ duskBtn.on("click", function(event){
     bannerDiv.attr("class", "dusk-outer");
     setTimeout(function(){
         background.attr("style", 
-        "background: url('./assets/images/general/bg-dusk.png'); background-size: contain; background-repeat: no-repeat; width: 80%; height: 0; padding-top: 60%;"
+        "background: url('./assets/images/general/bg-dusk.png'); background-size: contain; background-repeat: no-repeat"
         );
+        if ($(window).width() > 768) {
+            background.css("width", "600");
+            background.css("height", "450");
+        } else {
+            background.css("width", "80%");
+            background.css("height", "0")
+            background.css("padding-top", "60%");
+        }
+
         bannerDiv.css("background", "#FFE76C");
         dawnBtn.attr("disabled", false);
         dayBtn.attr("disabled", false);
@@ -116,8 +132,17 @@ darkBtn.on("click", function(event){
     bannerDiv.attr("class", "dark-outer");
     setTimeout(function(){
         background.attr("style", 
-        "background: url('./assets/images/general/bg-dark.png'); background-size: contain; background-repeat: no-repeat; width: 80%; height: 0; padding-top: 60%;"
+        "background: url('./assets/images/general/bg-dark.png'); background-size: contain; background-repeat: no-repeat"
         );
+        if ($(window).width() > 768) {
+            background.css("width", "600");
+            background.css("height", "450");
+        } else {
+            background.css("width", "80%");
+            background.css("height", "0")
+            background.css("padding-top", "60%");
+        }
+
         bannerDiv.css("background", "#08366D");
         dawnBtn.attr("disabled", false);
         duskBtn.attr("disabled", false);
@@ -140,8 +165,17 @@ doomBtn.on("click", function(event){
     bannerDiv.attr("class", "doom-outer");
     setTimeout(function(){
         background.attr("style", 
-        "background: url('./assets/images/general/bg-doom.png'); background-size: contain; background-repeat: no-repeat; width: 80%; height: 0; padding-top: 60%;"
+        "background: url('./assets/images/general/bg-doom.png'); background-size: contain; background-repeat: no-repeat"
         );
+        if ($(window).width() > 768) {
+            background.css("width", "600");
+            background.css("height", "450");
+        } else {
+            background.css("width", "80%");
+            background.css("height", "0")
+            background.css("padding-top", "60%");
+        }
+
         bannerDiv.css("background", "#BDA5A0");
         dawnBtn.attr("disabled", false);
         duskBtn.attr("disabled", false);
