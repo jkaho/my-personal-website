@@ -202,6 +202,13 @@ darkBtn.on("click", function(event){
             "position: absolute; top: 450px; left: 15vw; background: url('./assets/images/general/bg-dusk-sun.png'); background-size: contain; background-repeat: no-repeat; height: 100%; width: 100px; z-index: 1"
             );
         }, 2000)
+    } else if (background.attr("class") === "doom") {
+        sun.attr("class", "doom-sun-exit");
+        setTimeout(function(){
+            sun.attr("style", 
+            "position: absolute; top: 450px; left: 15vw; background: url('./assets/images/general/bg-doom-sun.png'); background-size: contain; background-repeat: no-repeat; height: 100%; width: 100px; z-index: 1"
+            );
+        }, 2000)
     }
 
     background.attr("class", "dark");
@@ -246,14 +253,14 @@ doomBtn.on("click", function(event){
         clouds.addClass("no-clouds");
     }
 
-    // if (background.attr("class") === "dark") {
-    //     moon.attr("class", "dark-moon-exit");
-    //     setTimeout(function(){
-    //         sun.attr("class", "doom-sun");
-    //     }, 2000)
-    // } else {
-    //     sun.attr("class", "doom-sun");
-    // }
+    if (background.attr("class") === "dark") {
+        moon.attr("class", "dark-moon-exit");
+        setTimeout(function(){
+            sun.attr("class", "doom-sun");
+        }, 600)
+    } else {
+        sun.attr("class", "doom-sun");
+    }
 
     background.attr("class", "doom");
     bannerDiv.attr("class", "doom-outer");
@@ -269,6 +276,9 @@ doomBtn.on("click", function(event){
             background.css("height", "0")
             background.css("padding-top", "60%");
         }
+        sun.attr("style", 
+        "position: absolute; top: 20px; left: 15vw; background: url('./assets/images/general/bg-doom-sun.png'); background-size: contain; background-repeat: no-repeat; height: 100%; width: 200px; z-index: 1"
+        );
 
         bannerDiv.css("background", "#BDA5A0");
         dawnBtn.attr("disabled", false);

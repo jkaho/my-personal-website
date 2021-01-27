@@ -324,6 +324,42 @@
     }
 }
 
+.doom-sun {
+    animation: doom-sun 2s forwards;
+}
+
+@keyframes doom-sun {
+    to {
+        position: absolute;
+        top: 20px;
+        left: 15vw;
+        background: url("../images/general/bg-doom-sun.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 200px;
+        z-index: 1;
+    }
+}
+
+.doom-sun-exit {
+    animation: doom-sun-exit 2s forwards;
+}
+
+@keyframes doom-sun-exit {
+    to {
+        position: absolute;
+        top: 450px;
+        left: 15vw;
+        background: url("../images/general/bg-doom-sun.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 200px;
+        z-index: 1;
+    }
+}
+
 .dawn-sun-exit {
     animation: dawn-sun-exit 2s forwards;
 }
