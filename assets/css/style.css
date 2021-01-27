@@ -8,6 +8,10 @@ body {
     min-height: 100%;
 }
 
+.page-header {
+    height: 100px;
+}
+
 #bg-outer {
     width: 100vw;
     background: #FFE8EF;
@@ -516,10 +520,6 @@ footer .made-by {
 } */
 
 /* -ABOUT ME PAGE- */
-#portfolio-header {
-    height: 100px;
-}
-
 
 /* image */
 #about-me img {
