@@ -1,4 +1,5 @@
 var background = $("#bg");
+var sun = $("#sun");
 var dawnBtn = $("#dawn-btn");
 var dayBtn = $("#day-btn");
 var duskBtn = $("#dusk-btn");
@@ -63,6 +64,7 @@ dayBtn.on("click", function(event){
     doomBtn.attr("disabled", true);
 
     background.attr("class", "day");   
+    sun.attr("class", "dawntoday");
     bannerDiv.attr("class", "day-outer");
     setTimeout(function(){
         background.attr("style", 

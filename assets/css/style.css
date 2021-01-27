@@ -6,6 +6,7 @@
 }
 
 #bg {
+    position: relative;
     background: url("../images/general/bg-dawn.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -13,6 +14,7 @@
     height: 0;
     padding-top: 60%;
     margin: 0 auto;
+    z-index: 2;
 }
 
 .dawn {
@@ -140,13 +142,45 @@
     }
 }
 
+#sun {
+    position: absolute;
+    top: 120px;
+    left: 55vw;
+    background: url("../images/general/bg-dawn-sun.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 200px;
+    z-index: 1;
+}
+
+.dawntoday {
+    animation: dawntoday 2s forwards;
+}
+
+@keyframes dawntoday {
+    to {
+        position: absolute;
+        top: 20px;
+        left: 15vw;
+        background: url("../images/general/bg-day-sun.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 200px;
+        z-index: 1;
+    }
+}
+
 #theme-div {
+    position: relative;
     background: rgb(177, 75, 75);
     width: 270px;
     opacity: 50%;
     border-radius: 5px;
     padding: 4px 2px;
     text-align: center;
+    z-index: 6;
 }
 
 .theme-btn {
