@@ -172,6 +172,24 @@
     }
 }
 
+.dawn-sun {
+    animation: dawn-sun 2s forwards;
+}
+
+@keyframes dawn-sun {
+    to {
+        position: absolute;
+        top: 120px;
+        left: 55vw;
+        background: url("../images/general/bg-dawn-sun.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 200px;
+        z-index: 1;
+    }
+}
+
 #theme-div {
     position: relative;
     background: rgb(177, 75, 75);

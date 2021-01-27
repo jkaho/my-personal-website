@@ -31,6 +31,7 @@ dawnBtn.on("click", function(event){
     doomBtn.attr("disabled", true);
 
     background.attr("class", "dawn");   
+    sun.attr("class", "dawn-sun");
     bannerDiv.attr("class", "dawn-outer");
     setTimeout(function(){
         background.attr("style", 
@@ -45,6 +46,9 @@ dawnBtn.on("click", function(event){
             background.css("padding-top", "60%");
         }
 
+        sun.attr("style", 
+        "position: absolute; top: 120px; left: 55vw; background: url('./assets/images/general/bg-dawn-sun.png'); background-size: contain; background-repeat: no-repeat; height: 100%; width: 200px; z-index: 1"
+        );
         bannerDiv.css("background", "#FFE8EF");
         dayBtn.attr("disabled", false);
         duskBtn.attr("disabled", false);
@@ -78,6 +82,9 @@ dayBtn.on("click", function(event){
             background.css("height", "0")
             background.css("padding-top", "60%");
         }
+        sun.attr("style", 
+        "position: absolute; top: 20px; left: 15vw; background: url('./assets/images/general/bg-day-sun.png'); background-size: contain; background-repeat: no-repeat; height: 100%; width: 200px; z-index: 1"
+        );
 
         bannerDiv.css("background", "#95E4EC");
         dawnBtn.attr("disabled", false);
