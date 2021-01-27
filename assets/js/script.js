@@ -115,6 +115,7 @@ duskBtn.on("click", function(event){
         clouds.addClass("no-clouds");
     }
     background.attr("class", "dusk");
+    sun.attr("class", "dusk-sun");
     bannerDiv.attr("class", "dusk-outer");
     setTimeout(function(){
         background.attr("style", 
@@ -128,6 +129,9 @@ duskBtn.on("click", function(event){
             background.css("height", "0")
             background.css("padding-top", "60%");
         }
+        sun.attr("style", 
+        "position: absolute; top: 320px; left: 15vw; background: url('./assets/images/general/bg-dusk-sun.png'); background-size: contain; background-repeat: no-repeat; height: 100%; width: 200px; z-index: 1"
+        );
 
         bannerDiv.css("background", "#FFE76C");
         dawnBtn.attr("disabled", false);

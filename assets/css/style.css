@@ -259,6 +259,24 @@
     }
 }
 
+.dusk-sun {
+    animation: dusk-sun 2s forwards;
+}
+
+@keyframes dusk-sun {
+    to {
+        position: absolute;
+        top: 320px;
+        left: 15vw;
+        background: url("../images/general/bg-dusk-sun.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 200px;
+        z-index: 1;
+    }
+}
+
 #theme-div {
     position: relative;
     background: rgb(177, 75, 75);
