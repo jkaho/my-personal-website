@@ -281,7 +281,22 @@
     animation: dark-moon 2s forwards;
 }
 
+.dark-moon-exit {
+    animation: dark-moon-exit 2s forwards;
+}
+
 @keyframes dark-moon {
+    from {
+        position: absolute;
+        top: 450px;
+        left: 15vw;
+        background: url("../images/general/bg-dark-moon.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100px;
+        z-index: 1;
+    }
     to {
         position: absolute;
         top: 20px;
@@ -339,7 +354,9 @@ nav ul {
 
 /* container */
 main {
+    position: relative;
     background: white;
+    z-index: 10;
 }
 
 main .container {
