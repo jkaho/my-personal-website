@@ -34,6 +34,8 @@ dawnBtn.on("click", function(event){
 
     if (background.attr("class") === "day") {
         clouds.addClass("no-clouds");
+    } else if (background.attr("class") === "dark") {
+        moon.attr("class", "dark-moon-exit");
     }
     background.attr("class", "dawn");   
     sun.attr("class", "dawn-sun");
@@ -71,6 +73,10 @@ dayBtn.on("click", function(event){
     duskBtn.attr("disabled", true);
     darkBtn.attr("disabled", true);
     doomBtn.attr("disabled", true);
+
+    if (background.attr("class") === "dark") {
+        moon.attr("class", "dark-moon-exit");
+    }
 
     background.attr("class", "day");   
     sun.attr("class", "day-sun");
@@ -114,7 +120,10 @@ duskBtn.on("click", function(event){
 
     if (background.attr("class") === "day") {
         clouds.addClass("no-clouds");
+    } else if (background.attr("class") === "dark") {
+        moon.attr("class", "dark-moon-exit");
     }
+
     background.attr("class", "dusk");
     sun.attr("class", "dusk-sun");
     bannerDiv.attr("class", "dusk-outer");
@@ -157,7 +166,12 @@ darkBtn.on("click", function(event){
     }
     if (background.attr("class") === "dawn") {
         sun.attr("class", "dawn-sun-exit");
+    } else if (background.attr("class") === "day") {
+        sun.attr("class", "day-sun-exit");
+    } else if (background.attr("class") === "dusk") {
+        sun.attr("class", "dusk-sun-exit");
     }
+
     background.attr("class", "dark");
     bannerDiv.attr("class", "dark-outer");
     setTimeout(function(){
@@ -180,7 +194,16 @@ darkBtn.on("click", function(event){
             sun.attr("style", 
             "position: absolute; top: 450px; left: 15vw; background: url('./assets/images/general/bg-dawn-sun.png'); background-size: contain; background-repeat: no-repeat; height: 100%; width: 100px; z-index: 1"
             );
+        } else if (background.attr("class") === "day") {
+            sun.attr("style", 
+            "position: absolute; top: 450px; left: 15vw; background: url('./assets/images/general/bg-day-sun.png'); background-size: contain; background-repeat: no-repeat; height: 100%; width: 100px; z-index: 1"
+            );
+        } else if (background.attr("class") === "dusk") {
+            sun.attr("style", 
+            "position: absolute; top: 450px; left: 15vw; background: url('./assets/images/general/bg-dusk-sun.png'); background-size: contain; background-repeat: no-repeat; height: 100%; width: 100px; z-index: 1"
+            );
         }
+    
     
 
         bannerDiv.css("background", "#08366D");
@@ -203,7 +226,10 @@ doomBtn.on("click", function(event){
 
     if (background.attr("class") === "day") {
         clouds.addClass("no-clouds");
+    } else if (background.attr("class") === "dark") {
+        moon.attr("class", "dark-moon-exit");
     }
+
     background.attr("class", "doom");
     bannerDiv.attr("class", "doom-outer");
     setTimeout(function(){

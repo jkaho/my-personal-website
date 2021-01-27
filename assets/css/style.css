@@ -310,6 +310,20 @@
     }
 }
 
+@keyframes dark-moon-exit {
+    to {
+        position: absolute;
+        top: 450px;
+        left: 15vw;
+        background: url("../images/general/bg-dark-moon.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100px;
+        z-index: 1;
+    }
+}
+
 .dawn-sun-exit {
     animation: dawn-sun-exit 2s forwards;
 }
@@ -320,6 +334,42 @@
         top: 450px;
         left: 55vw;
         background: url("../images/general/bg-dawn-sun.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 200px;
+        z-index: 1;
+    }
+}
+
+.day-sun-exit {
+    animation: day-sun-exit 2s forwards;
+}
+
+@keyframes day-sun-exit {
+    to {
+        position: absolute;
+        top: 450px;
+        left: 15vw;
+        background: url("../images/general/bg-day-sun.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 200px;
+        z-index: 1;
+    }
+}
+
+.dusk-sun-exit {
+    animation: dusk-sun-exit 2s forwards;
+}
+
+@keyframes dusk-sun-exit {
+    to {
+        position: absolute;
+        top: 450px;
+        left: 15vw;
+        background: url("../images/general/bg-dusk-sun.png");
         background-size: contain;
         background-repeat: no-repeat;
         height: 100%;
