@@ -1,5 +1,6 @@
 var background = $("#bg");
 var sun = $("#sun");
+var clouds = $("#clouds");
 var dawnBtn = $("#dawn-btn");
 var dayBtn = $("#day-btn");
 var duskBtn = $("#dusk-btn");
@@ -30,6 +31,9 @@ dawnBtn.on("click", function(event){
     darkBtn.attr("disabled", true);
     doomBtn.attr("disabled", true);
 
+    if (background.attr("class") === "day") {
+        clouds.addClass("no-clouds");
+    }
     background.attr("class", "dawn");   
     sun.attr("class", "dawn-sun");
     bannerDiv.attr("class", "dawn-outer");
@@ -68,7 +72,8 @@ dayBtn.on("click", function(event){
     doomBtn.attr("disabled", true);
 
     background.attr("class", "day");   
-    sun.attr("class", "dawntoday");
+    sun.attr("class", "day-sun");
+    clouds.attr("class", "day-clouds");
     bannerDiv.attr("class", "day-outer");
     setTimeout(function(){
         background.attr("style", 
@@ -85,7 +90,9 @@ dayBtn.on("click", function(event){
         sun.attr("style", 
         "position: absolute; top: 20px; left: 15vw; background: url('./assets/images/general/bg-day-sun.png'); background-size: contain; background-repeat: no-repeat; height: 100%; width: 200px; z-index: 1"
         );
-
+        clouds.attr("style", 
+        "position: absolute; background: url('./assets/images/general/bg-day-clouds.png'); background-size: contain; background-repeat: no-repeat; height: 100%; width: 250px; z-index: 2"
+        )
         bannerDiv.css("background", "#95E4EC");
         dawnBtn.attr("disabled", false);
         duskBtn.attr("disabled", false);

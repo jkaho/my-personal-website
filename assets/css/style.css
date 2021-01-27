@@ -14,7 +14,7 @@
     height: 0;
     padding-top: 60%;
     margin: 0 auto;
-    z-index: 2;
+    z-index: 3;
 }
 
 .dawn {
@@ -154,24 +154,6 @@
     z-index: 1;
 }
 
-.dawntoday {
-    animation: dawntoday 2s forwards;
-}
-
-@keyframes dawntoday {
-    to {
-        position: absolute;
-        top: 20px;
-        left: 15vw;
-        background: url("../images/general/bg-day-sun.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 100%;
-        width: 200px;
-        z-index: 1;
-    }
-}
-
 .dawn-sun {
     animation: dawn-sun 2s forwards;
 }
@@ -190,6 +172,93 @@
     }
 }
 
+.day-sun {
+    animation: day-sun 2s forwards;
+}
+
+#clouds {
+    position: absolute;
+    background: url("../images/general/bg-day-clouds.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 250px;
+    z-index: 2;
+}
+
+.day-clouds {
+    animation: day-clouds 0.5s 1s forwards;
+}
+
+.no-clouds {
+    animation: no-clouds 2s forwards;
+}
+
+@keyframes day-sun {
+    to {
+        position: absolute;
+        top: 20px;
+        left: 15vw;
+        background: url("../images/general/bg-day-sun.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 200px;
+        z-index: 1;
+    }
+}
+
+@keyframes day-clouds {
+    from {
+        top: 80px;
+        left: -50px;
+        position: absolute;
+        background: url("../images/general/bg-day-clouds.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 250px;
+        z-index: 2;
+    }
+    to {
+        top: 80px;
+        left: 13vw;
+        position: absolute;
+        background: url("../images/general/bg-day-clouds.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 250px;
+        z-index: 2;
+    }
+}
+
+@keyframes no-clouds {
+    from {
+        top: 80px;
+        left: 13vw;
+        position: absolute;
+        background: url("../images/general/bg-day-clouds.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 250px;
+        z-index: 2;
+    }
+    to {
+        opacity: 0;
+        top: 80px;
+        left: 70%;
+        position: absolute;
+        background: url("../images/general/bg-day-clouds.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 250px;
+        z-index: 2;
+    }
+}
+
 #theme-div {
     position: relative;
     background: rgb(177, 75, 75);
@@ -198,7 +267,7 @@
     border-radius: 5px;
     padding: 4px 2px;
     text-align: center;
-    z-index: 6;
+    z-index: 10;
 }
 
 .theme-btn {
@@ -220,7 +289,7 @@
 /* navbar */
 .navbar {
     position: absolute;
-    z-index: 3;
+    z-index: 10;
 }
 
 .navbar-brand {
