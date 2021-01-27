@@ -492,6 +492,7 @@ h1 {
 
 /* sticky footer */
 footer {
+    font-family: 'Raleway', sans-serif;
     height: 5rem;
     width: 100%;
     position: absolute;
