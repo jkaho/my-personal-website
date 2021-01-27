@@ -155,6 +155,7 @@ darkBtn.on("click", function(event){
         clouds.addClass("no-clouds");
     }
     background.attr("class", "dark");
+    sun.attr("class", "dark-moon");
     bannerDiv.attr("class", "dark-outer");
     setTimeout(function(){
         background.attr("style", 
@@ -168,6 +169,9 @@ darkBtn.on("click", function(event){
             background.css("height", "0")
             background.css("padding-top", "60%");
         }
+        sun.attr("style", 
+        "position: absolute; top: 20px; left: 15vw; background: url('./assets/images/general/bg-dark-moon.png'); background-size: contain; background-repeat: no-repeat; height: 100%; width: 100px; z-index: 1"
+        );
 
         bannerDiv.css("background", "#08366D");
         dawnBtn.attr("disabled", false);

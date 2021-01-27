@@ -277,6 +277,24 @@
     }
 }
 
+.dark-moon {
+    animation: dark-moon 2s forwards;
+}
+
+@keyframes dark-moon {
+    to {
+        position: absolute;
+        top: 20px;
+        left: 15vw;
+        background: url("../images/general/bg-dark-moon.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100px;
+        z-index: 1;
+    }
+}
+
 #theme-div {
     position: relative;
     background: rgb(177, 75, 75);
