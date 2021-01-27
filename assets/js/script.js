@@ -155,10 +155,13 @@ darkBtn.on("click", function(event){
     if (background.attr("class") === "day") {
         clouds.addClass("no-clouds");
     }
+    if (background.attr("class") === "dawn") {
+        sun.attr("class", "dawn-sun-exit");
+    }
     background.attr("class", "dark");
-    moon.attr("class", "dark-moon");
     bannerDiv.attr("class", "dark-outer");
     setTimeout(function(){
+        moon.attr("class", "dark-moon");
         background.attr("style", 
         "background: url('./assets/images/general/bg-dark.png'); background-size: contain; background-repeat: no-repeat"
         );
@@ -173,6 +176,12 @@ darkBtn.on("click", function(event){
         moon.attr("style", 
         "position: absolute; top: 20px; left: 15vw; background: url('./assets/images/general/bg-dark-moon.png'); background-size: contain; background-repeat: no-repeat; height: 100%; width: 100px; z-index: 1"
         );
+        if (background.attr("class") === "dawn") {
+            sun.attr("style", 
+            "position: absolute; top: 450px; left: 15vw; background: url('./assets/images/general/bg-dawn-sun.png'); background-size: contain; background-repeat: no-repeat; height: 100%; width: 100px; z-index: 1"
+            );
+        }
+    
 
         bannerDiv.css("background", "#08366D");
         dawnBtn.attr("disabled", false);
