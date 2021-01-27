@@ -488,11 +488,18 @@ h1 {
 
 /* sticky footer */
 footer {
-    height: 2.5rem;
+    height: 5rem;
     width: 100%;
     position: absolute;
     bottom: 0;
     z-index: 11;
+    background-color: #FFE8EF;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.footer span {
+    color:rgb(177, 75, 75);
 }
 /* footer .container {
     width: auto;
