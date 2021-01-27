@@ -155,7 +155,7 @@
 }
 
 .dawn-sun {
-    animation: dawn-sun 2s forwards;
+    animation: dawn-sun 1s forwards;
 }
 
 @keyframes dawn-sun {
@@ -173,7 +173,7 @@
 }
 
 .day-sun {
-    animation: day-sun 2s forwards;
+    animation: day-sun 1s forwards;
 }
 
 #clouds {
@@ -191,7 +191,7 @@
 }
 
 .no-clouds {
-    animation: no-clouds 2s forwards;
+    animation: no-clouds 1.5s forwards;
 }
 
 @keyframes day-sun {
@@ -260,7 +260,7 @@
 }
 
 .dusk-sun {
-    animation: dusk-sun 2s forwards;
+    animation: dusk-sun 1s forwards;
 }
 
 @keyframes dusk-sun {
@@ -278,7 +278,7 @@
 }
 
 .dark-moon {
-    animation: dark-moon 2s forwards;
+    animation: dark-moon 1s forwards;
 }
 
 .dark-moon-exit {
@@ -325,7 +325,7 @@
 }
 
 .doom-sun {
-    animation: doom-sun 2s forwards;
+    animation: doom-sun 1s forwards;
 }
 
 @keyframes doom-sun {
@@ -343,7 +343,7 @@
 }
 
 .doom-sun-exit {
-    animation: doom-sun-exit 2s forwards;
+    animation: doom-sun-exit 1s forwards;
 }
 
 @keyframes doom-sun-exit {
@@ -361,7 +361,7 @@
 }
 
 .dawn-sun-exit {
-    animation: dawn-sun-exit 2s forwards;
+    animation: dawn-sun-exit 1s forwards;
 }
 
 @keyframes dawn-sun-exit {
@@ -379,7 +379,7 @@
 }
 
 .day-sun-exit {
-    animation: day-sun-exit 2s forwards;
+    animation: day-sun-exit 1s forwards;
 }
 
 @keyframes day-sun-exit {
@@ -397,7 +397,7 @@
 }
 
 .dusk-sun-exit {
-    animation: dusk-sun-exit 2s forwards;
+    animation: dusk-sun-exit 1s forwards;
 }
 
 @keyframes dusk-sun-exit {

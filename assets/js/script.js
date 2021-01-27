@@ -47,6 +47,7 @@ dawnBtn.on("click", function(event){
 
     background.attr("class", "dawn");   
     bannerDiv.attr("class", "dawn-outer");
+
     setTimeout(function(){
         background.attr("style", 
         "background: url('./assets/images/general/bg-dawn.png'); background-size: contain; background-repeat: no-repeat"
@@ -215,6 +216,8 @@ darkBtn.on("click", function(event){
     bannerDiv.attr("class", "dark-outer");
     setTimeout(function(){
         moon.attr("class", "dark-moon");
+    }, 1100)
+    setTimeout(function(){
         background.attr("style", 
         "background: url('./assets/images/general/bg-dark.png'); background-size: contain; background-repeat: no-repeat"
         );
