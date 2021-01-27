@@ -111,6 +111,9 @@ duskBtn.on("click", function(event){
     darkBtn.attr("disabled", true);
     doomBtn.attr("disabled", true);
 
+    if (background.attr("class") === "day") {
+        clouds.addClass("no-clouds");
+    }
     background.attr("class", "dusk");
     bannerDiv.attr("class", "dusk-outer");
     setTimeout(function(){
@@ -144,6 +147,9 @@ darkBtn.on("click", function(event){
     dayBtn.attr("disabled", true);
     doomBtn.attr("disabled", true);
 
+    if (background.attr("class") === "day") {
+        clouds.addClass("no-clouds");
+    }
     background.attr("class", "dark");
     bannerDiv.attr("class", "dark-outer");
     setTimeout(function(){
@@ -177,6 +183,9 @@ doomBtn.on("click", function(event){
     dayBtn.attr("disabled", true);
     darkBtn.attr("disabled", true);
 
+    if (background.attr("class") === "day") {
+        clouds.addClass("no-clouds");
+    }
     background.attr("class", "doom");
     bannerDiv.attr("class", "doom-outer");
     setTimeout(function(){
