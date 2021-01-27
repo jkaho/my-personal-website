@@ -282,7 +282,7 @@
 }
 
 .dark-moon-exit {
-    animation: dark-moon-exit 2s forwards;
+    animation: dark-moon-exit 1s forwards;
 }
 
 @keyframes dark-moon {
