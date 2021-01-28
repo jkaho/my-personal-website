@@ -1,3 +1,5 @@
+var theme = "";
+
 var background = $("#bg");
 var outerBackground = $("#bg-outer");
 var sun = $("#sun");
@@ -32,11 +34,17 @@ function responsiveBackground(){
     }
 }
 
-
 $(window).on("resize", responsiveBackground);
+
+function storeTheme() {
+    localStorage.setItem("theme", theme);
+}
 
 dawnBtn.on("click", function(event){
     event.preventDefault();
+
+    theme = "dawn";
+    storeTheme();
 
     themeBtnDiv.css("background", "rgb(177, 75, 75)");
     footerDiv.css("background", "#FFE8EF");
@@ -89,6 +97,9 @@ dawnBtn.on("click", function(event){
 dayBtn.on("click", function(event){
     event.preventDefault();
 
+    theme = "day";
+    storeTheme();
+
     themeBtnDiv.css("background", "rgb(75, 121, 177)");
     footerDiv.css("background", "#95E4EC");
     dawnBtn.attr("disabled", true);
@@ -139,6 +150,9 @@ dayBtn.on("click", function(event){
 duskBtn.on("click", function(event){
     event.preventDefault();
 
+    theme = "dusk";
+    storeTheme();
+
     themeBtnDiv.css("background", "rgb(225, 153, 45)");
     footerDiv.css("background", "#FFE76C");
     dawnBtn.attr("disabled", true);
@@ -188,6 +202,9 @@ duskBtn.on("click", function(event){
 
 darkBtn.on("click", function(event){
     event.preventDefault();
+
+    theme = "dark";
+    storeTheme();
 
     themeBtnDiv.css("background", "rgb(124, 125, 171)");
     footerDiv.css("background", "#08366D");
@@ -262,6 +279,9 @@ darkBtn.on("click", function(event){
 
 doomBtn.on("click", function(event){
     event.preventDefault();
+
+    theme = "doom";
+    storeTheme();
 
     themeBtnDiv.css("background", "rgb(69, 67, 67)");
     footerDiv.css("background", "#BDA5A0");
