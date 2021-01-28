@@ -12,23 +12,28 @@ var bannerDiv = $("#bg-outer");
 var themeBtnDiv = $("#theme-div");
 var footerDiv = $(".footer");
 
-$(window).on("resize", function(){
+responsiveBackground();
+
+function responsiveBackground(){
     if ($(window).width() > 768) {
         background.css("width", "600px");
         background.css("height", "450px");
         outerBackground.css("height", "450px");
+        sun.css("display", "inline-block");
+        moon.css("display", "inline-block");
+        clouds.css("display", "inline-block");
     } else {
         background.css("width", "400px");
         background.css("height", "300px")
         outerBackground.css("height", "300px");
+        sun.css("display", "none");
+        moon.css("display", "none");
+        clouds.css("display", "none");
     }
-})
+}
 
-// if ($(window).width() < 768) {
-//     sun.attr("style",
-//     "position: absolute; top: 30%; left: 250px; background: url('./assets/images/general/bg-dawn-sun.png'); background-size: contain; background-repeat: no-repeat; height: 25%; width: 200px; z-index: 1;"
-//     );
-// }
+
+$(window).on("resize", responsiveBackground);
 
 dawnBtn.on("click", function(event){
     event.preventDefault();
@@ -60,18 +65,19 @@ dawnBtn.on("click", function(event){
         background.attr("style", 
         "background: url('./assets/images/general/bg-dawn.png'); background-size: contain; background-repeat: no-repeat"
         );
-        if ($(window).width() > 768) {
-            background.css("width", "600");
-            background.css("height", "450");
-        } else {
-            background.css("width", "80%");
-            background.css("height", "0")
-            background.css("padding-top", "60%");
-        }
+        // if ($(window).width() > 768) {
+        //     background.css("width", "600");
+        //     background.css("height", "450");
+        // } else {
+        //     background.css("width", "80%");
+        //     background.css("height", "0")
+        //     background.css("padding-top", "60%");
+        // }
 
         sun.attr("style", 
         "position: absolute; top: 175px; left: 380px; background: url('./assets/images/general/bg-dawn-sun.png'); background-size: contain; background-repeat: no-repeat; width: 200px; z-index: 1"
         );
+        responsiveBackground();
         bannerDiv.css("background", "#FFE8EF");
         dayBtn.attr("disabled", false);
         duskBtn.attr("disabled", false);
@@ -106,20 +112,22 @@ dayBtn.on("click", function(event){
         background.attr("style", 
         "background: url('./assets/images/general/bg-day.png'); background-size: contain; background-repeat: no-repeat"
         );
-        if ($(window).width() > 768) {
-            background.css("width", "600");
-            background.css("height", "450");
-        } else {
-            background.css("width", "80%");
-            background.css("height", "0")
-            background.css("padding-top", "60%");
-        }
+        // if ($(window).width() > 768) {
+        //     background.css("width", "600");
+        //     background.css("height", "450");
+        // } else {
+        //     background.css("width", "80%");
+        //     background.css("height", "0")
+        //     background.css("padding-top", "60%");
+        // }
         sun.attr("style", 
         "position: absolute; top: 30px; left: 100px; background: url('./assets/images/general/bg-day-sun.png'); background-size: contain; background-repeat: no-repeat; width: 200px; z-index: 1"
         );
         clouds.attr("style", 
         "position: absolute; background: url('./assets/images/general/bg-day-clouds.png'); background-size: contain; background-repeat: no-repeat; width: 200px; z-index: 2"
-        )
+        );
+        responsiveBackground();
+
         bannerDiv.css("background", "#95E4EC");
         dawnBtn.attr("disabled", false);
         duskBtn.attr("disabled", false);
@@ -157,17 +165,18 @@ duskBtn.on("click", function(event){
         background.attr("style", 
         "background: url('./assets/images/general/bg-dusk.png'); background-size: contain; background-repeat: no-repeat"
         );
-        if ($(window).width() > 768) {
-            background.css("width", "600");
-            background.css("height", "450");
-        } else {
-            background.css("width", "80%");
-            background.css("height", "0")
-            background.css("padding-top", "60%");
-        }
+        // if ($(window).width() > 768) {
+        //     background.css("width", "600");
+        //     background.css("height", "450");
+        // } else {
+        //     background.css("width", "80%");
+        //     background.css("height", "0")
+        //     background.css("padding-top", "60%");
+        // }
         sun.attr("style", 
         "position: absolute; top: 350px; left: 55px; background: url('./assets/images/general/bg-dusk-sun.png'); background-size: contain; background-repeat: no-repeat; width: 200px; z-index: 1"
         );
+        responsiveBackground();
 
         bannerDiv.css("background", "#FFE76C");
         dawnBtn.attr("disabled", false);
@@ -229,19 +238,20 @@ darkBtn.on("click", function(event){
         background.attr("style", 
         "background: url('./assets/images/general/bg-dark.png'); background-size: contain; background-repeat: no-repeat"
         );
-        if ($(window).width() > 768) {
-            background.css("width", "600");
-            background.css("height", "450");
-        } else {
-            background.css("width", "80%");
-            background.css("height", "0")
-            background.css("padding-top", "60%");
-        }
+        // if ($(window).width() > 768) {
+        //     background.css("width", "600");
+        //     background.css("height", "450");
+        // } else {
+        //     background.css("width", "80%");
+        //     background.css("height", "0")
+        //     background.css("padding-top", "60%");
+        // }
 
         moon.attr("style", 
         "position: absolute; top: 20px; left: 15vw; background: url('./assets/images/general/bg-dark-moon.png'); background-size: contain; background-repeat: no-repeat; width: 100px; z-index: 1"
         );
-    
+        responsiveBackground();
+
         bannerDiv.css("background", "#08366D");
         dawnBtn.attr("disabled", false);
         duskBtn.attr("disabled", false);
@@ -279,17 +289,18 @@ doomBtn.on("click", function(event){
         background.attr("style", 
         "background: url('./assets/images/general/bg-doom.png'); background-size: contain; background-repeat: no-repeat"
         );
-        if ($(window).width() > 768) {
-            background.css("width", "600");
-            background.css("height", "450");
-        } else {
-            background.css("width", "80%");
-            background.css("height", "0")
-            background.css("padding-top", "60%");
-        }
+        // if ($(window).width() > 768) {
+        //     background.css("width", "600");
+        //     background.css("height", "450");
+        // } else {
+        //     background.css("width", "80%");
+        //     background.css("height", "0")
+        //     background.css("padding-top", "60%");
+        // }
         sun.attr("style", 
         "position: absolute; top: 30px; left: 100px; background: url('./assets/images/general/bg-doom-sun.png'); background-size: contain; background-repeat: no-repeat; width: 200px; z-index: 1"
         );
+        responsiveBackground();
 
         bannerDiv.css("background", "#BDA5A0");
         dawnBtn.attr("disabled", false);
