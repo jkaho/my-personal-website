@@ -177,7 +177,25 @@ body {
     animation: dawn-sun 1s forwards;
 }
 
+.dawn-sun-s {
+    animation: dawn-sun-s 1s forwards;
+}
+
 @keyframes dawn-sun {
+    to {
+        position: absolute;
+        top: 175px;
+        left: 380px;
+        background: url("../images/general/bg-dawn-sun.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 25%;
+        width: 200px;
+        z-index: 1;
+    }
+}
+
+@keyframes dawn-sun-s {
     to {
         position: absolute;
         top: 175px;
@@ -645,12 +663,6 @@ form {
 
 /* medium devices (tablets, 768px and down) */
 @media (max-width: 768px) { 
-    #bg {
-        width: 80%;
-        height: 0;
-        padding-top: 60%;
-    }
-
     #bg-inner {
         width: 80%;
         height: auto;

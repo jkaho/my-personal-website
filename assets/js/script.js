@@ -1,4 +1,5 @@
 var background = $("#bg");
+var outerBackground = $("#bg-outer");
 var sun = $("#sun");
 var moon = $("#moon");
 var clouds = $("#clouds");
@@ -15,12 +16,19 @@ $(window).on("resize", function(){
     if ($(window).width() > 768) {
         background.css("width", "600px");
         background.css("height", "450px");
+        outerBackground.css("height", "450px");
     } else {
-        background.css("width", "80%");
-        background.css("height", "0")
-        background.css("padding-top", "60%");
+        background.css("width", "400px");
+        background.css("height", "300px")
+        outerBackground.css("height", "300px");
     }
 })
+
+// if ($(window).width() < 768) {
+//     sun.attr("style",
+//     "position: absolute; top: 30%; left: 250px; background: url('./assets/images/general/bg-dawn-sun.png'); background-size: contain; background-repeat: no-repeat; height: 25%; width: 200px; z-index: 1;"
+//     );
+// }
 
 dawnBtn.on("click", function(event){
     event.preventDefault();
