@@ -62,7 +62,7 @@ dawnBtn.on("click", function(event){
         }
 
         sun.attr("style", 
-        "position: absolute; top: 120px; left: 55vw; background: url('./assets/images/general/bg-dawn-sun.png'); background-size: contain; background-repeat: no-repeat; width: 200px; z-index: 1"
+        "position: absolute; top: 175px; left: 380px; background: url('./assets/images/general/bg-dawn-sun.png'); background-size: contain; background-repeat: no-repeat; width: 200px; z-index: 1"
         );
         bannerDiv.css("background", "#FFE8EF");
         dayBtn.attr("disabled", false);
@@ -107,10 +107,10 @@ dayBtn.on("click", function(event){
             background.css("padding-top", "60%");
         }
         sun.attr("style", 
-        "position: absolute; top: 20px; left: 15vw; background: url('./assets/images/general/bg-day-sun.png'); background-size: contain; background-repeat: no-repeat; width: 200px; z-index: 1"
+        "position: absolute; top: 30px; left: 100px; background: url('./assets/images/general/bg-day-sun.png'); background-size: contain; background-repeat: no-repeat; width: 200px; z-index: 1"
         );
         clouds.attr("style", 
-        "position: absolute; background: url('./assets/images/general/bg-day-clouds.png'); background-size: contain; background-repeat: no-repeat; width: 250px; z-index: 2"
+        "position: absolute; background: url('./assets/images/general/bg-day-clouds.png'); background-size: contain; background-repeat: no-repeat; width: 200px; z-index: 2"
         )
         bannerDiv.css("background", "#95E4EC");
         dawnBtn.attr("disabled", false);
@@ -158,7 +158,7 @@ duskBtn.on("click", function(event){
             background.css("padding-top", "60%");
         }
         sun.attr("style", 
-        "position: absolute; top: 320px; left: 15vw; background: url('./assets/images/general/bg-dusk-sun.png'); background-size: contain; background-repeat: no-repeat; width: 200px; z-index: 1"
+        "position: absolute; top: 350px; left: 55px; background: url('./assets/images/general/bg-dusk-sun.png'); background-size: contain; background-repeat: no-repeat; width: 200px; z-index: 1"
         );
 
         bannerDiv.css("background", "#FFE76C");
@@ -186,28 +186,28 @@ darkBtn.on("click", function(event){
         sun.attr("class", "dawn-sun-exit");
         setTimeout(function(){
             sun.attr("style", 
-            "position: absolute; top: 450px; left: 55vw; background: url('./assets/images/general/bg-dawn-sun.png'); background-size: contain; background-repeat: no-repeat; width: 100px; z-index: 1"
+            "position: absolute; top: 450px; left: 380px; background: url('./assets/images/general/bg-dawn-sun.png'); background-size: contain; background-repeat: no-repeat; width: 100px; z-index: 1"
         );
         }, 2000)
     } else if (background.attr("class") === "day") {
         sun.attr("class", "day-sun-exit");
         setTimeout(function(){
             sun.attr("style", 
-            "position: absolute; top: 450px; left: 15vw; background: url('./assets/images/general/bg-day-sun.png'); background-size: contain; background-repeat: no-repeat; width: 100px; z-index: 1"
+            "position: absolute; top: 450px; left: 100px; background: url('./assets/images/general/bg-day-sun.png'); background-size: contain; background-repeat: no-repeat; width: 100px; z-index: 1"
             );
         }, 2000)
     } else if (background.attr("class") === "dusk") {
         sun.attr("class", "dusk-sun-exit");
         setTimeout(function(){
             sun.attr("style", 
-            "position: absolute; top: 450px; left: 15vw; background: url('./assets/images/general/bg-dusk-sun.png'); background-size: contain; background-repeat: no-repeat; width: 100px; z-index: 1"
+            "position: absolute; top: 450px; left: 55px; background: url('./assets/images/general/bg-dusk-sun.png'); background-size: contain; background-repeat: no-repeat; width: 100px; z-index: 1"
             );
         }, 2000)
     } else if (background.attr("class") === "doom") {
         sun.attr("class", "doom-sun-exit");
         setTimeout(function(){
             sun.attr("style", 
-            "position: absolute; top: 450px; left: 15vw; background: url('./assets/images/general/bg-doom-sun.png'); background-size: contain; background-repeat: no-repeat; width: 100px; z-index: 1"
+            "position: absolute; top: 450px; left: 100px; background: url('./assets/images/general/bg-doom-sun.png'); background-size: contain; background-repeat: no-repeat; width: 100px; z-index: 1"
             );
         }, 2000)
     }
@@ -280,7 +280,7 @@ doomBtn.on("click", function(event){
             background.css("padding-top", "60%");
         }
         sun.attr("style", 
-        "position: absolute; top: 20px; left: 15vw; background: url('./assets/images/general/bg-doom-sun.png'); background-size: contain; background-repeat: no-repeat; width: 200px; z-index: 1"
+        "position: absolute; top: 30px; left: 100px; background: url('./assets/images/general/bg-doom-sun.png'); background-size: contain; background-repeat: no-repeat; width: 200px; z-index: 1"
         );
 
         bannerDiv.css("background", "#BDA5A0");

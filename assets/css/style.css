@@ -163,12 +163,12 @@ body {
 
 #sun {
     position: absolute;
-    top: 120px;
-    left: 55vw;
+    top: 175px;
+    left: 380px;
     background: url("../images/general/bg-dawn-sun.png");
     background-size: contain;
     background-repeat: no-repeat;
-    height: 20%;
+    height: 25%;
     width: 200px;
     z-index: 1;
 }
@@ -180,12 +180,12 @@ body {
 @keyframes dawn-sun {
     to {
         position: absolute;
-        top: 120px;
-        left: 55vw;
+        top: 175px;
+        left: 380px;
         background: url("../images/general/bg-dawn-sun.png");
         background-size: contain;
         background-repeat: no-repeat;
-        height: 20%;
+        height: 25%;
         width: 200px;
         z-index: 1;
     }
@@ -197,12 +197,11 @@ body {
 
 #clouds {
     position: absolute;
-    top: 450px;
     background: url("../images/general/bg-day-clouds.png");
     background-size: contain;
     background-repeat: no-repeat;
     height: 20%;
-    width: 250px;
+    width: 200px;
     z-index: 2;
 }
 
@@ -217,12 +216,12 @@ body {
 @keyframes day-sun {
     to {
         position: absolute;
-        top: 20px;
-        left: 15vw;
+        top: 30px;
+        left: 100px;
         background: url("../images/general/bg-day-sun.png");
         background-size: contain;
         background-repeat: no-repeat;
-        height: 20%;
+        height: 25%;
         width: 200px;
         z-index: 1;
     }
@@ -230,51 +229,51 @@ body {
 
 @keyframes day-clouds {
     from {
-        top: 80px;
+        top: 70px;
         left: -50px;
         position: absolute;
         background: url("../images/general/bg-day-clouds.png");
         background-size: contain;
         background-repeat: no-repeat;
         height: 20%;
-        width: 250px;
+        width: 200px;
         z-index: 2;
     }
     to {
-        top: 80px;
-        left: 13vw;
+        top: 70px;
+        left: 75px;
         position: absolute;
         background: url("../images/general/bg-day-clouds.png");
         background-size: contain;
         background-repeat: no-repeat;
         height: 20%;
-        width: 250px;
+        width: 200px;
         z-index: 2;
     }
 }
 
 @keyframes no-clouds {
     from {
-        top: 80px;
-        left: 13vw;
+        top: 70px;
+        left: 75px;
         position: absolute;
         background: url("../images/general/bg-day-clouds.png");
         background-size: contain;
         background-repeat: no-repeat;
         height: 20%;
-        width: 250px;
+        width: 200px;
         z-index: 2;
     }
     to {
         opacity: 0;
-        top: 80px;
+        top: 70px;
         left: 70%;
         position: absolute;
         background: url("../images/general/bg-day-clouds.png");
         background-size: contain;
         background-repeat: no-repeat;
         height: 20%;
-        width: 250px;
+        width: 200px;
         z-index: 2;
     }
 }
@@ -286,12 +285,12 @@ body {
 @keyframes dusk-sun {
     to {
         position: absolute;
-        top: 320px;
-        left: 15vw;
+        top: 350px;
+        left: 55px;
         background: url("../images/general/bg-dusk-sun.png");
         background-size: contain;
         background-repeat: no-repeat;
-        height: 20%;
+        height: 25%;
         width: 200px;
         z-index: 1;
     }
@@ -309,7 +308,7 @@ body {
     from {
         position: absolute;
         top: 450px;
-        left: 15vw;
+        left: 55px;
         background: url("../images/general/bg-dark-moon.png");
         background-size: contain;
         background-repeat: no-repeat;
@@ -319,8 +318,8 @@ body {
     }
     to {
         position: absolute;
-        top: 20px;
-        left: 15vw;
+        top: 65px;
+        left: 55px;
         background: url("../images/general/bg-dark-moon.png");
         background-size: contain;
         background-repeat: no-repeat;
@@ -333,8 +332,8 @@ body {
 @keyframes dark-moon-exit {
     from {
         position: absolute;
-        top: 20px;
-        left: 15vw;
+        top: 65px;
+        left: 55px;
         background: url("../images/general/bg-dark-moon.png");
         background-size: contain;
         background-repeat: no-repeat;
@@ -345,7 +344,7 @@ body {
     to {
         position: absolute;
         top: 450px;
-        left: 15vw;
+        left: 55px;
         background: url("../images/general/bg-dark-moon.png");
         background-size: contain;
         background-repeat: no-repeat;
@@ -362,12 +361,12 @@ body {
 @keyframes doom-sun {
     to {
         position: absolute;
-        top: 20px;
-        left: 15vw;
+        top: 30px;
+        left: 100px;
         background: url("../images/general/bg-doom-sun.png");
         background-size: contain;
         background-repeat: no-repeat;
-        height: 20%;
+        height: 25%;
         width: 200px;
         z-index: 1;
     }
@@ -381,11 +380,11 @@ body {
     to {
         position: absolute;
         top: 450px;
-        left: 15vw;
+        left: 100px;
         background: url("../images/general/bg-doom-sun.png");
         background-size: contain;
         background-repeat: no-repeat;
-        height: 20%;
+        height: 25%;
         width: 200px;
         z-index: 1;
     }
@@ -399,11 +398,11 @@ body {
     to {
         position: absolute;
         top: 450px;
-        left: 55vw;
+        left: 380px;
         background: url("../images/general/bg-dawn-sun.png");
         background-size: contain;
         background-repeat: no-repeat;
-        height: 20%;
+        height: 25%;
         width: 200px;
         z-index: 1;
     }
@@ -417,11 +416,11 @@ body {
     to {
         position: absolute;
         top: 450px;
-        left: 15vw;
+        left: 100px;
         background: url("../images/general/bg-day-sun.png");
         background-size: contain;
         background-repeat: no-repeat;
-        height: 20%;
+        height: 25%;
         width: 200px;
         z-index: 1;
     }
@@ -435,11 +434,11 @@ body {
     to {
         position: absolute;
         top: 450px;
-        left: 15vw;
+        left: 55px;
         background: url("../images/general/bg-dusk-sun.png");
         background-size: contain;
         background-repeat: no-repeat;
-        height: 20%;
+        height: 25%;
         width: 200px;
         z-index: 1;
     }
