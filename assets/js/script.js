@@ -13,6 +13,10 @@ var doomBtn = $("#doom-btn");
 var bannerDiv = $("#bg-outer");
 var themeBtnDiv = $("#theme-div");
 
+var indexNav = $("#index-navbar");
+var portfolioNav = $("#portfolio-navbar");
+var contactNav = $("#contact-navbar");
+
 var footerDiv = $(".footer");
 var portfolioFooter = $("#portfolio-footer");
 var contactFooter = $("#contact-footer");
@@ -51,6 +55,9 @@ function renderTheme() {
         footerDiv.css("background", "#FFE8EF");
         portfolioFooter.css("background", "#FFE8EF");
         contactFooter.css("background", "#FFE8EF");
+        indexNav.css("background", "#FFE8EF");
+        portfolioNav.css("background", "#FFE8EF");
+        contactNav.css("background", "#FFE8EF");
         themeBtnDiv.css("background", "rgb(177, 75, 75)");
         outerBackground.css("background", "#FFE8EF");
         background.attr("style", "background: url('./assets/images/general/bg-dawn.png'); position: absolute; background-size: contain; background-repeat: no-repeat; margin: 0 auto; z-index: 3");
@@ -60,6 +67,9 @@ function renderTheme() {
         footerDiv.css("background", "#95E4EC");
         portfolioFooter.css("background", "#95E4EC");
         contactFooter.css("background", "#95E4EC");
+        indexNav.css("background", "#95E4EC");
+        portfolioNav.css("background", "#95E4EC");
+        contactNav.css("background", "#95E4EC");
         themeBtnDiv.css("background", "rgb(75, 121, 177)");
         outerBackground.css("background", "#95E4EC");
         background.attr("style", "background: url('./assets/images/general/bg-day.png'); position: absolute; background-size: contain; background-repeat: no-repeat; margin: 0 auto; z-index: 3");
@@ -70,6 +80,9 @@ function renderTheme() {
         footerDiv.css("background", "#FFE76C");
         portfolioFooter.css("background", "#FFE76C");
         contactFooter.css("background", "#FFE76C");
+        indexNav.css("background", "#FFE76C");
+        portfolioNav.css("background", "#FFE76C");
+        contactNav.css("background", "#FFE76C");
         themeBtnDiv.css("background", "rgb(225, 153, 45)");
         outerBackground.css("background", "#FFE76C");
         background.attr("style", "background: url('./assets/images/general/bg-dusk.png'); position: absolute; background-size: contain; background-repeat: no-repeat; margin: 0 auto; z-index: 3");
@@ -79,6 +92,9 @@ function renderTheme() {
         footerDiv.css("background", "#08366D");
         portfolioFooter.css("background", "#08366D");
         contactFooter.css("background", "#08366D");
+        indexNav.css("background", "#08366D");
+        portfolioNav.css("background", "#08366D");
+        contactNav.css("background", "#08366D");
         themeBtnDiv.css("background", "rgb(124, 125, 171)");
         outerBackground.css("background", "#08366D");
         background.attr("style", "background: url('./assets/images/general/bg-dark.png'); position: absolute; background-size: contain; background-repeat: no-repeat; margin: 0 auto; z-index: 3");
@@ -89,6 +105,9 @@ function renderTheme() {
         footerDiv.css("background", "#BDA5A0");
         portfolioFooter.css("background", "#BDA5A0");
         contactFooter.css("background", "#BDA5A0");
+        indexNav.css("background", "#BDA5A0");
+        portfolioNav.css("background", "#BDA5A0");
+        contactNav.css("background", "#BDA5A0");
         themeBtnDiv.css("background", "rgb(69, 67, 67)");
         outerBackground.css("background", "#BDA5A0");
         background.attr("style", "background: url('./assets/images/general/bg-doom.png'); position: absolute; background-size: contain; background-repeat: no-repeat; margin: 0 auto; z-index: 3");
