@@ -17,19 +17,25 @@ var footerDiv = $(".footer");
 var portfolioFooter = $("#portfolio-footer");
 var contactFooter = $("#contact-footer");
 
+renderTheme();
+
 responsiveBackground();
 
 function responsiveBackground(){
     if ($(window).width() > 768) {
+        var updatedTheme = localStorage.getItem("theme");
         background.css("width", "600px");
         background.css("height", "450px");
         outerBackground.css("height", "450px");
         sun.css("display", "inline-block");
-        moon.css("display", "inline-block");
-        clouds.css("display", "inline-block");
+        if (updatedTheme === "day") {
+            clouds.css("display", "inline-block");
+        } else if (updatedTheme === "dark") {
+            moon.css("display", "inline-block");
+        }
     } else {
         background.css("width", "400px");
-        background.css("height", "300px")
+        background.css("height", "300px");
         outerBackground.css("height", "300px");
         sun.css("display", "none");
         moon.css("display", "none");
@@ -38,8 +44,6 @@ function responsiveBackground(){
 }
 
 $(window).on("resize", responsiveBackground);
-
-renderTheme();
 
 function renderTheme() {
     var updatedTheme = localStorage.getItem("theme");
@@ -111,7 +115,7 @@ dawnBtn.on("click", function(event){
     doomBtn.attr("disabled", true);
 
     if (background.attr("class") === "day") {
-        clouds.addClass("no-clouds");
+        clouds.attr("class", "no-clouds");
     }
     
     if (background.attr("class") === "dark") {
@@ -218,7 +222,7 @@ duskBtn.on("click", function(event){
     doomBtn.attr("disabled", true);
 
     if (background.attr("class") === "day") {
-        clouds.addClass("no-clouds");
+        clouds.attr("class", "no-clouds");
     }
     
     if (background.attr("class") === "dark") {
@@ -271,7 +275,7 @@ darkBtn.on("click", function(event){
     doomBtn.attr("disabled", true);
 
     if (background.attr("class") === "day") {
-        clouds.addClass("no-clouds");
+        clouds.attr("class", "no-clouds");
     }
     if (background.attr("class") === "dawn") {
         sun.attr("class", "dawn-sun-exit");
@@ -348,7 +352,7 @@ doomBtn.on("click", function(event){
     darkBtn.attr("disabled", true);
 
     if (background.attr("class") === "day") {
-        clouds.addClass("no-clouds");
+        clouds.attr("class", "no-clouds");
     }
 
     if (background.attr("class") === "dark") {

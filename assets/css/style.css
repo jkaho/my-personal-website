@@ -259,6 +259,7 @@ body {
 
 @keyframes no-clouds {
     from {
+        visibility: visible;
         top: 70px;
         left: 75px;
         position: absolute;
@@ -666,12 +667,7 @@ form {
 
 /* medium devices (tablets, 768px and down) */
 @media (max-width: 768px) { 
-    #bg-inner {
-        width: 80%;
-        height: auto;
-    }
-
-    #bg {
+    #bg, #bg-inner {
         height: 300px;
         width: 400px;
     }
