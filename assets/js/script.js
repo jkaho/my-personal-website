@@ -50,6 +50,7 @@ function renderTheme() {
 
         outerBackground.css("background", "#FFE8EF");
         background.attr("style", "background: url('./assets/images/general/bg-dawn.png'); position: absolute; background-size: contain; background-repeat: no-repeat; margin: 0 auto; z-index: 3");
+        sun.attr("style", "position: absolute; top: 175px; left: 380px; background: url('./assets/images/general/bg-dawn-sun.png'); background-size: contain; background-repeat: no-repeat; height: 25%; width: 200px; z-index: 1");
     } else if (updatedTheme === "day") {
         footerDiv.css("background", "#95E4EC");
         portfolioFooter.css("background", "#95E4EC");
@@ -57,6 +58,8 @@ function renderTheme() {
 
         outerBackground.css("background", "#95E4EC");
         background.attr("style", "background: url('./assets/images/general/bg-day.png'); position: absolute; background-size: contain; background-repeat: no-repeat; margin: 0 auto; z-index: 3");
+        sun.attr("style", "position: absolute; top: 30px; left: 100px; background: url('./assets/images/general/bg-day-sun.png'); background-size: contain; background-repeat: no-repeat; height: 25%; width: 200px; z-index: 1");
+        clouds.attr("style", "visibility: visible; top: 70px; left: 75px; position: absolute; background: url('./assets/images/general/bg-day-clouds.png'); background-size: contain; background-repeat: no-repeat; height: 20%; width: 200px; z-index: 2");
     } else if (updatedTheme === "dusk") {
         footerDiv.css("background", "#FFE76C");
         portfolioFooter.css("background", "#FFE76C");
@@ -64,6 +67,7 @@ function renderTheme() {
 
         outerBackground.css("background", "#FFE76C");
         background.attr("style", "background: url('./assets/images/general/bg-dusk.png'); position: absolute; background-size: contain; background-repeat: no-repeat; margin: 0 auto; z-index: 3");
+        sun.attr("style", "position: absolute; top: 350px; left: 55px; background: url('./assets/images/general/bg-dusk-sun.png'); background-size: contain; background-repeat: no-repeat; height: 25%; width: 200px; z-index: 1");
     } else if (updatedTheme === "dark") {
         footerDiv.css("background", "#08366D");
         portfolioFooter.css("background", "#08366D");
@@ -71,6 +75,8 @@ function renderTheme() {
 
         outerBackground.css("background", "#08366D");
         background.attr("style", "background: url('./assets/images/general/bg-dark.png'); position: absolute; background-size: contain; background-repeat: no-repeat; margin: 0 auto; z-index: 3");
+        sun.attr("style", "position: absolute; top: 450px; left: 380px; background: url('./assets/images/general/bg-dawn-sun.png'); background-size: contain; background-repeat: no-repeat; height: 25%; width: 200px; z-index: 1");
+        moon.attr("style", "visibility: visible; position: absolute; top: 65px; left: 55px; background: url('./assets/images/general/bg-dark-moon.png'); background-size: contain; background-repeat: no-repeat; height: 20%; width: 100px; z-index: 1");
     } else {
         footerDiv.css("background", "#BDA5A0");
         portfolioFooter.css("background", "#BDA5A0");
@@ -78,10 +84,9 @@ function renderTheme() {
 
         outerBackground.css("background", "#BDA5A0");
         background.attr("style", "background: url('./assets/images/general/bg-doom.png'); position: absolute; background-size: contain; background-repeat: no-repeat; margin: 0 auto; z-index: 3");
+        sun.attr("style", "position: absolute; top: 30px; left: 100px; background: url('./assets/images/general/bg-doom-sun.png'); background-size: contain; background-repeat: no-repeat; height: 25%; width: 200px; z-index: 1");
     }
 }
-console.log(background.css("background"))
-console.log(background.attr("style"))
 
 function storeTheme() {
     localStorage.setItem("theme", theme);

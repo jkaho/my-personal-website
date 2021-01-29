@@ -14,7 +14,7 @@ body {
 
 #bg-outer {
     width: 100vw;
-    background: #FFE8EF;
+    /* background: #FFE8EF; */
 }
 
 #bg-inner {
@@ -165,7 +165,7 @@ body {
     position: absolute;
     top: 175px;
     left: 380px;
-    background: url("../images/general/bg-dawn-sun.png");
+    /* background: url("../images/general/bg-dawn-sun.png"); */
     background-size: contain;
     background-repeat: no-repeat;
     height: 25%;
