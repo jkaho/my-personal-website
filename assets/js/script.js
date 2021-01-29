@@ -12,7 +12,10 @@ var darkBtn = $("#dark-btn");
 var doomBtn = $("#doom-btn");
 var bannerDiv = $("#bg-outer");
 var themeBtnDiv = $("#theme-div");
+
 var footerDiv = $(".footer");
+var portfolioFooter = $("#portfolio-footer");
+var contactFooter = $("#contact-footer");
 
 responsiveBackground();
 
@@ -35,6 +38,33 @@ function responsiveBackground(){
 }
 
 $(window).on("resize", responsiveBackground);
+
+renderTheme();
+
+function renderTheme() {
+    var updatedTheme = localStorage.getItem("theme");
+    if (updatedTheme === "dawn" || updatedTheme === "") {
+        footerDiv.css("background", "#FFE8EF");
+        portfolioFooter.css("background", "#FFE8EF");
+        contactFooter.css("background", "#FFE8EF");
+    } else if (updatedTheme === "day") {
+        footerDiv.css("background", "#95E4EC");
+        portfolioFooter.css("background", "#95E4EC");
+        contactFooter.css("background", "#95E4EC");
+    } else if (updatedTheme === "dusk") {
+        footerDiv.css("background", "#FFE76C");
+        portfolioFooter.css("background", "#FFE76C");
+        contactFooter.css("background", "#FFE76C");
+    } else if (updatedTheme === "dark") {
+        footerDiv.css("background", "#08366D");
+        portfolioFooter.css("background", "#08366D");
+        contactFooter.css("background", "#08366D");
+    } else {
+        footerDiv.css("background", "#BDA5A0");
+        portfolioFooter.css("background", "#BDA5A0");
+        contactFooter.css("background", "#BDA5A0");
+    }
+}
 
 function storeTheme() {
     localStorage.setItem("theme", theme);
