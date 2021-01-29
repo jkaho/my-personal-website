@@ -13,13 +13,15 @@ var doomBtn = $("#doom-btn");
 var bannerDiv = $("#bg-outer");
 var themeBtnDiv = $("#theme-div");
 
-var indexNav = $("#index-navbar");
 var portfolioNav = $("#portfolio-navbar");
 var contactNav = $("#contact-navbar");
 
 var footerDiv = $(".footer");
 var portfolioFooter = $("#portfolio-footer");
 var contactFooter = $("#contact-footer");
+var indexSpan = $("#index-span");
+var portfolioSpan = $("#portfolio-span");
+var contactSpan = $("#contact-span");
 
 renderTheme();
 
@@ -53,9 +55,11 @@ function renderTheme() {
     var updatedTheme = localStorage.getItem("theme");
     if (updatedTheme === "dawn" || updatedTheme === null) {
         footerDiv.css("background", "#FFE8EF");
+        indexSpan.css("color", "rgb(177, 75, 75)");
         portfolioFooter.css("background", "#FFE8EF");
+        portfolioSpan.css("color", "rgb(177, 75, 75)")
         contactFooter.css("background", "#FFE8EF");
-        indexNav.css("background", "#FFE8EF");
+        contactSpan.css("color", "rgb(177, 75, 75)");
         portfolioNav.css("background", "#FFE8EF");
         contactNav.css("background", "#FFE8EF");
         themeBtnDiv.css("background", "rgb(177, 75, 75)");
@@ -65,9 +69,11 @@ function renderTheme() {
         background.attr("class", "dawn");
     } else if (updatedTheme === "day") {
         footerDiv.css("background", "#95E4EC");
+        indexSpan.css("color", "#2f7b96");
         portfolioFooter.css("background", "#95E4EC");
+        portfolioSpan.css("color", "#2f7b96");
         contactFooter.css("background", "#95E4EC");
-        indexNav.css("background", "#95E4EC");
+        contactSpan.css("color", "#2f7b96");
         portfolioNav.css("background", "#95E4EC");
         contactNav.css("background", "#95E4EC");
         themeBtnDiv.css("background", "rgb(75, 121, 177)");
@@ -78,9 +84,11 @@ function renderTheme() {
         background.attr("class", "day");
     } else if (updatedTheme === "dusk") {
         footerDiv.css("background", "#FFE76C");
+        indexSpan.css("color", "#c48900");
         portfolioFooter.css("background", "#FFE76C");
+        portfolioSpan.css("color", "#c48900");
         contactFooter.css("background", "#FFE76C");
-        indexNav.css("background", "#FFE76C");
+        contactSpan.css("color", "#c48900");
         portfolioNav.css("background", "#FFE76C");
         contactNav.css("background", "#FFE76C");
         themeBtnDiv.css("background", "rgb(225, 153, 45)");
@@ -90,9 +98,11 @@ function renderTheme() {
         background.attr("class", "dusk");
     } else if (updatedTheme === "dark") {
         footerDiv.css("background", "#08366D");
+        indexSpan.css("color", "white");
         portfolioFooter.css("background", "#08366D");
+        portfolioSpan.css("color", "white");
         contactFooter.css("background", "#08366D");
-        indexNav.css("background", "#08366D");
+        contactSpan.css("color", "white");
         portfolioNav.css("background", "#08366D");
         contactNav.css("background", "#08366D");
         themeBtnDiv.css("background", "rgb(124, 125, 171)");
@@ -103,9 +113,11 @@ function renderTheme() {
         background.attr("class", "dark");
     } else {
         footerDiv.css("background", "#BDA5A0");
+        indexSpan.css("color", "#66442c");
         portfolioFooter.css("background", "#BDA5A0");
+        portfolioSpan.css("color", "#66442c");
         contactFooter.css("background", "#BDA5A0");
-        indexNav.css("background", "#BDA5A0");
+        contactSpan.css("color", "#66442c");
         portfolioNav.css("background", "#BDA5A0");
         contactNav.css("background", "#BDA5A0");
         themeBtnDiv.css("background", "rgb(69, 67, 67)");
@@ -128,6 +140,7 @@ dawnBtn.on("click", function(event){
 
     themeBtnDiv.css("background", "rgb(177, 75, 75)");
     footerDiv.css("background", "#FFE8EF");
+    indexSpan.css("color", "rgb(177, 75, 75)");
     dayBtn.attr("disabled", true);
     duskBtn.attr("disabled", true);
     darkBtn.attr("disabled", true);
@@ -182,6 +195,7 @@ dayBtn.on("click", function(event){
 
     themeBtnDiv.css("background", "rgb(75, 121, 177)");
     footerDiv.css("background", "#95E4EC");
+    indexSpan.css("color", "#2f7b96");
     dawnBtn.attr("disabled", true);
     duskBtn.attr("disabled", true);
     darkBtn.attr("disabled", true);
@@ -235,6 +249,7 @@ duskBtn.on("click", function(event){
 
     themeBtnDiv.css("background", "rgb(225, 153, 45)");
     footerDiv.css("background", "#FFE76C");
+    indexSpan.css("color", "#c48900");
     dawnBtn.attr("disabled", true);
     dayBtn.attr("disabled", true);
     darkBtn.attr("disabled", true);
@@ -288,6 +303,7 @@ darkBtn.on("click", function(event){
 
     themeBtnDiv.css("background", "rgb(124, 125, 171)");
     footerDiv.css("background", "#08366D");
+    indexSpan.css("color", "white");
     dawnBtn.attr("disabled", true);
     duskBtn.attr("disabled", true);
     dayBtn.attr("disabled", true);
@@ -365,6 +381,7 @@ doomBtn.on("click", function(event){
 
     themeBtnDiv.css("background", "rgb(69, 67, 67)");
     footerDiv.css("background", "#BDA5A0");
+    indexSpan.css("color", "#66442c");
     dawnBtn.attr("disabled", true);
     duskBtn.attr("disabled", true);
     dayBtn.attr("disabled", true);

@@ -516,7 +516,7 @@ main {
 }
 
 main .container {
-    padding: 2.5rem 0 10rem 0;
+    padding: 2.5rem 0 8rem 0;
     margin: 0 auto;
 }
 
@@ -646,7 +646,6 @@ form {
     font-family: 'Raleway', sans-serif;
     padding-top: 30px;
     padding-left: 100px;
-    padding-bottom: 210px;
 }
 
 /* 'Get In Touch' below form (shows when screen size < 768px) */
