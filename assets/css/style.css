@@ -467,7 +467,7 @@ body {
 
 #theme-div {
     position: relative;
-    background: rgb(177, 75, 75);
+    /* background: rgb(177, 75, 75); */
     width: 270px;
     opacity: 50%;
     border-radius: 5px;
