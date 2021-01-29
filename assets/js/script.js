@@ -43,28 +43,45 @@ renderTheme();
 
 function renderTheme() {
     var updatedTheme = localStorage.getItem("theme");
-    if (updatedTheme === "dawn" || updatedTheme === "") {
+    if (updatedTheme === "dawn" || updatedTheme === null) {
         footerDiv.css("background", "#FFE8EF");
         portfolioFooter.css("background", "#FFE8EF");
         contactFooter.css("background", "#FFE8EF");
+
+        outerBackground.css("background", "#FFE8EF");
+        background.attr("style", "background: url('./assets/images/general/bg-dawn.png'); position: absolute; background-size: contain; background-repeat: no-repeat; margin: 0 auto; z-index: 3");
     } else if (updatedTheme === "day") {
         footerDiv.css("background", "#95E4EC");
         portfolioFooter.css("background", "#95E4EC");
         contactFooter.css("background", "#95E4EC");
+
+        outerBackground.css("background", "#95E4EC");
+        background.attr("style", "background: url('./assets/images/general/bg-day.png'); position: absolute; background-size: contain; background-repeat: no-repeat; margin: 0 auto; z-index: 3");
     } else if (updatedTheme === "dusk") {
         footerDiv.css("background", "#FFE76C");
         portfolioFooter.css("background", "#FFE76C");
         contactFooter.css("background", "#FFE76C");
+
+        outerBackground.css("background", "#FFE76C");
+        background.attr("style", "background: url('./assets/images/general/bg-dusk.png'); position: absolute; background-size: contain; background-repeat: no-repeat; margin: 0 auto; z-index: 3");
     } else if (updatedTheme === "dark") {
         footerDiv.css("background", "#08366D");
         portfolioFooter.css("background", "#08366D");
         contactFooter.css("background", "#08366D");
+
+        outerBackground.css("background", "#08366D");
+        background.attr("style", "background: url('./assets/images/general/bg-dark.png'); position: absolute; background-size: contain; background-repeat: no-repeat; margin: 0 auto; z-index: 3");
     } else {
         footerDiv.css("background", "#BDA5A0");
         portfolioFooter.css("background", "#BDA5A0");
         contactFooter.css("background", "#BDA5A0");
+
+        outerBackground.css("background", "#BDA5A0");
+        background.attr("style", "background: url('./assets/images/general/bg-doom.png'); position: absolute; background-size: contain; background-repeat: no-repeat; margin: 0 auto; z-index: 3");
     }
 }
+console.log(background.css("background"))
+console.log(background.attr("style"))
 
 function storeTheme() {
     localStorage.setItem("theme", theme);
