@@ -597,16 +597,21 @@ footer .made-by {
 
 /* -PORTFOLIO PAGE- */
 
+.portfolio {
+    padding-bottom: 30px;
+}
+
 /* project headings */
 .portfolio h3 {
     font-family: 'Raleway', sans-serif;
     padding-top: 30px;
     padding-left: 25px;
+    text-align: center;
 }
 
-#project-2 h3 {
+/* #project-2 h3 {
     padding-left: 470px;
-}
+} */
 
 /* images */
 .float-left img {
@@ -619,6 +624,8 @@ footer .made-by {
 
 .project img {
     margin: 25px;
+    border: solid 1px #e6e2e2;
+    box-shadow: -10px 10px  #fcefd6;
 }
 
 /* text */
@@ -824,7 +831,7 @@ form {
 /* extra-large devices (desktops, 992px and up) */
 @media (min-width: 1200px) { 
     /* portfolio page */
-    #project-2 h3 {
+    /* #project-2 h3 {
         padding-left: 620px;
-    }
+    } */
 }
