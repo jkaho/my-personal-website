@@ -614,6 +614,22 @@ footer .made-by {
     margin: 25px;
 }
 
+/* previous and next page arrows */
+
+#contact-arrow {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    z-index: 11;
+}
+
+#aboutme-arrow {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    z-index: 11;
+}
+
 /* -CONTACT ME PAGE- */
 
 /* page heading */
