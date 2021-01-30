@@ -493,10 +493,17 @@ body {
     color: rgb(0, 0, 0);
 }
 
+#name-div {
+    position: absolute;
+    top: 220px;
+    left: 200px;
+    z-index: 20;
+}
+
 /* navbar */
 .navbar {
     position: absolute;
-    z-index: 11;
+    z-index: 12;
 }
 
 .navbar-brand {

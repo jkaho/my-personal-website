@@ -14,6 +14,8 @@ var bannerDiv = $("#bg-outer");
 var themeBtnDiv = $("#theme-div");
 var navLinks = $(".nav-link");
 
+var nameDiv = $("#name-div");
+var nameImg = $("#name-img");
 var indexNavToggler = $("#index-nav-toggler");
 var indexNav = $("#index-navbar");
 var portfolioNav = $("#portfolio-navbar");
@@ -60,6 +62,8 @@ $(window).on("resize", responsiveBackground);
 function renderTheme() {
     var updatedTheme = localStorage.getItem("theme");
     if (updatedTheme === "dawn" || updatedTheme === null) {
+        nameImg.attr("style", "width: 240px; height: 80px");
+        nameImg.attr("src", "./assets/images/general/name-dawn.png");
         footerDiv.css("background", "#FFE8EF");
         indexSpan.css("color", "rgb(177, 75, 75)");
         portfolioFooter.css("background", "#FFE8EF");
@@ -75,6 +79,8 @@ function renderTheme() {
         sun.attr("style", "position: absolute; top: 175px; left: 380px; background: url('./assets/images/general/bg-dawn-sun.png'); background-size: contain; background-repeat: no-repeat; height: 25%; width: 200px; z-index: 1");
         background.attr("class", "dawn");
     } else if (updatedTheme === "day") {
+        nameImg.attr("style", "width: 240px; height: 80px");
+        nameImg.attr("src", "./assets/images/general/name-day.png");
         footerDiv.css("background", "#95E4EC");
         indexSpan.css("color", "#2f7b96");
         portfolioFooter.css("background", "#95E4EC");
@@ -91,6 +97,8 @@ function renderTheme() {
         clouds.attr("style", "visibility: visible; top: 70px; left: 75px; position: absolute; background: url('./assets/images/general/bg-day-clouds.png'); background-size: contain; background-repeat: no-repeat; height: 20%; width: 200px; z-index: 2");
         background.attr("class", "day");
     } else if (updatedTheme === "dusk") {
+        nameImg.attr("style", "width: 240px; height: 80px");
+        nameImg.attr("src", "./assets/images/general/name-white.png");
         footerDiv.css("background", "#FFE76C");
         indexSpan.css("color", "#c48900");
         portfolioFooter.css("background", "#FFE76C");
@@ -106,6 +114,8 @@ function renderTheme() {
         sun.attr("style", "position: absolute; top: 350px; left: 55px; background: url('./assets/images/general/bg-dusk-sun.png'); background-size: contain; background-repeat: no-repeat; height: 25%; width: 200px; z-index: 1");
         background.attr("class", "dusk");
     } else if (updatedTheme === "dark") {
+        nameImg.attr("style", "width: 240px; height: 80px");
+        nameImg.attr("src", "./assets/images/general/name-white.png");
         footerDiv.css("background", "#08366D");
         indexSpan.css("color", "white");
         portfolioFooter.css("background", "#08366D");
@@ -122,6 +132,8 @@ function renderTheme() {
         moon.attr("style", "visibility: visible; position: absolute; top: 65px; left: 55px; background: url('./assets/images/general/bg-dark-moon.png'); background-size: contain; background-repeat: no-repeat; height: 20%; width: 100px; z-index: 1");
         background.attr("class", "dark");
     } else {
+        nameImg.attr("style", "width: 240px; height: 80px");
+        nameImg.attr("src", "./assets/images/general/name-white.png");
         footerDiv.css("background", "#BDA5A0");
         indexSpan.css("color", "#66442c");
         portfolioFooter.css("background", "#BDA5A0");
@@ -186,6 +198,7 @@ dawnBtn.on("click", function(event){
     footerDiv.css("background", "#FFE8EF");
     indexSpan.css("color", "rgb(177, 75, 75)");
     navLinks.css("color", "rgb(177, 75, 75)");
+    nameImg.attr("src", "./assets/images/general/name-dawn.png");
 
     dayBtn.attr("disabled", true);
     duskBtn.attr("disabled", true);
@@ -243,6 +256,7 @@ dayBtn.on("click", function(event){
     footerDiv.css("background", "#95E4EC");
     indexSpan.css("color", "#2f7b96");
     navLinks.css("color", "#2f7b96");
+    nameImg.attr("src", "./assets/images/general/name-day.png");
 
     dawnBtn.attr("disabled", true);
     duskBtn.attr("disabled", true);
@@ -299,6 +313,7 @@ duskBtn.on("click", function(event){
     footerDiv.css("background", "#FFE76C");
     indexSpan.css("color", "#c48900");
     navLinks.css("color", "#c48900");
+    nameImg.attr("src", "./assets/images/general/name-white.png");
 
     dawnBtn.attr("disabled", true);
     dayBtn.attr("disabled", true);
@@ -355,6 +370,7 @@ darkBtn.on("click", function(event){
     footerDiv.css("background", "#08366D");
     indexSpan.css("color", "white");
     navLinks.css("color", "white");
+    nameImg.attr("src", "./assets/images/general/name-white.png");
 
     dawnBtn.attr("disabled", true);
     duskBtn.attr("disabled", true);
@@ -435,6 +451,7 @@ doomBtn.on("click", function(event){
     footerDiv.css("background", "#BDA5A0");
     indexSpan.css("color", "#66442c");
     navLinks.css("color", "#66442c");
+    nameImg.attr("src", "./assets/images/general/name-white.png");
 
     dawnBtn.attr("disabled", true);
     duskBtn.attr("disabled", true);
