@@ -561,6 +561,9 @@ footer .made-by {
 
 /* -ABOUT ME PAGE- */
 
+#about-me {
+    margin-bottom: 4rem;
+}
 /* image */
 #about-me img {
     display: block;
@@ -571,15 +574,13 @@ footer .made-by {
 /* text */
 #about-me p {
     padding-top: 30px;
-    padding-bottom: 85px;
+    padding-bottom: 1rem;
 }
 
 /* next page arrow */
 #portfolio-arrow {
-    position: absolute;
-    top: 320px;
-    right: 50px;
-    z-index: 11;
+    position: relative;
+    text-align: center;
 }
 
 /* -PORTFOLIO PAGE- */
@@ -632,10 +633,15 @@ footer .made-by {
 
 /* -CONTACT ME PAGE- */
 
+#contact-me {
+    margin-top: 30px;
+}
+
 /* page heading */
 #contact-me h2 {
     font-size: 40px;
     font-family: 'Raleway', sans-serif;
+    text-align: center;
 }
 
 /* form */
@@ -684,6 +690,15 @@ form {
     height: 170px;
     padding: 15px;
     margin: 1px;
+}
+
+/* previous page btn */
+
+#portfolio-arrow-back {
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    z-index: 11;
 }
 
 /* ---------------------MEDIA QUERIES--------------------- */
