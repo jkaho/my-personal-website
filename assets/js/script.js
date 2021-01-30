@@ -39,6 +39,8 @@ function responsiveBackground(){
         background.css("width", "600px");
         background.css("height", "450px");
         outerBackground.css("height", "450px");
+        nameDiv.attr("style", "position: absolute; top: 220px; left: 200px; z-index: 12");
+        nameImg.attr("style", "width: 240px; height: 80px");
         sun.css("display", "inline-block");
         if (updatedTheme === "day") {
             clouds.css("display", "inline-block");
@@ -50,6 +52,8 @@ function responsiveBackground(){
         background.css("width", "400px");
         background.css("height", "300px");
         outerBackground.css("height", "300px");
+        nameDiv.attr("style", "position: absolute; top: 150px; left: 150px; z-index: 12");
+        nameImg.attr("style", "width: 180px; height: 60px");
         sun.css("display", "none");
         moon.css("display", "none");
         clouds.css("display", "none");
@@ -62,7 +66,6 @@ $(window).on("resize", responsiveBackground);
 function renderTheme() {
     var updatedTheme = localStorage.getItem("theme");
     if (updatedTheme === "dawn" || updatedTheme === null) {
-        nameImg.attr("style", "width: 240px; height: 80px");
         nameImg.attr("src", "./assets/images/general/name-dawn.png");
         footerDiv.css("background", "#FFE8EF");
         indexSpan.css("color", "rgb(177, 75, 75)");
@@ -79,7 +82,6 @@ function renderTheme() {
         sun.attr("style", "position: absolute; top: 175px; left: 380px; background: url('./assets/images/general/bg-dawn-sun.png'); background-size: contain; background-repeat: no-repeat; height: 25%; width: 200px; z-index: 1");
         background.attr("class", "dawn");
     } else if (updatedTheme === "day") {
-        nameImg.attr("style", "width: 240px; height: 80px");
         nameImg.attr("src", "./assets/images/general/name-day.png");
         footerDiv.css("background", "#95E4EC");
         indexSpan.css("color", "#2f7b96");
@@ -97,7 +99,6 @@ function renderTheme() {
         clouds.attr("style", "visibility: visible; top: 70px; left: 75px; position: absolute; background: url('./assets/images/general/bg-day-clouds.png'); background-size: contain; background-repeat: no-repeat; height: 20%; width: 200px; z-index: 2");
         background.attr("class", "day");
     } else if (updatedTheme === "dusk") {
-        nameImg.attr("style", "width: 240px; height: 80px");
         nameImg.attr("src", "./assets/images/general/name-white.png");
         footerDiv.css("background", "#FFE76C");
         indexSpan.css("color", "#c48900");
@@ -114,7 +115,6 @@ function renderTheme() {
         sun.attr("style", "position: absolute; top: 350px; left: 55px; background: url('./assets/images/general/bg-dusk-sun.png'); background-size: contain; background-repeat: no-repeat; height: 25%; width: 200px; z-index: 1");
         background.attr("class", "dusk");
     } else if (updatedTheme === "dark") {
-        nameImg.attr("style", "width: 240px; height: 80px");
         nameImg.attr("src", "./assets/images/general/name-white.png");
         footerDiv.css("background", "#08366D");
         indexSpan.css("color", "white");
@@ -132,7 +132,6 @@ function renderTheme() {
         moon.attr("style", "visibility: visible; position: absolute; top: 65px; left: 55px; background: url('./assets/images/general/bg-dark-moon.png'); background-size: contain; background-repeat: no-repeat; height: 20%; width: 100px; z-index: 1");
         background.attr("class", "dark");
     } else {
-        nameImg.attr("style", "width: 240px; height: 80px");
         nameImg.attr("src", "./assets/images/general/name-white.png");
         footerDiv.css("background", "#BDA5A0");
         indexSpan.css("color", "#66442c");
