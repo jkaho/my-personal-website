@@ -142,18 +142,19 @@ function storeTheme() {
 
 var toggleStatus = "closed";
 indexNavToggler.on("click", function(){
+    var updatedTheme = localStorage.getItem("theme");
     if (toggleStatus === "closed") {
         toggleStatus = "open";
         if (updatedTheme === "dawn" || updatedTheme === null) {
-            indexNav.css("background", "#FFE8EF");
+            indexNav.css("background", "#f2c2cc");
         } else if (updatedTheme === "day") {
-            indexNav.css("background", "#95E4EC");
+            indexNav.css("background", "#81d3db");
         } else if (updatedTheme === "dusk") {
-            indexNav.css("background", "#FFE76C");
+            indexNav.css("background", "#f5cc5d");
         } else if (updatedTheme === "dark") {
-            indexNav.css("background", "#08366D");
+            indexNav.css("background", "#2d5687");
         } else {
-            indexNav.css("background", "#BDA5A0");
+            indexNav.css("background", "#ba9791");
         }
     } else {
         toggleStatus = "closed";
