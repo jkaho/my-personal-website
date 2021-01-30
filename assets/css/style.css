@@ -617,16 +617,20 @@ footer .made-by {
 
 /* previous and next page arrows */
 
+#portfolio-arrows {
+    padding-top: 1rem;
+}
+
 #contact-arrow {
     position: absolute;
-    top: 100px;
+    bottom: 110px;
     right: 50px;
     z-index: 11;
 }
 
 #aboutme-arrow {
     position: absolute;
-    top: 100px;
+    bottom: 110px;
     left: 50px;
     z-index: 11;
 }
