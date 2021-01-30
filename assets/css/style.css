@@ -757,7 +757,6 @@ form {
 
     #about-me p {
         text-align: center;
-        margin-bottom: 100px;
     }
 
     /* portfolio page */
@@ -789,6 +788,14 @@ form {
 
     .hide {
         display: inline-flex;
+    }
+
+    #hide-heading {
+        padding-top: 20px;
+    }
+
+    #hidden-info {
+        padding-bottom: 30px;
     }
 
     .hide h5 {

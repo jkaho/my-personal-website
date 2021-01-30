@@ -19,6 +19,7 @@ var indexNav = $("#index-navbar");
 var portfolioNav = $("#portfolio-navbar");
 var contactNav = $("#contact-navbar");
 
+var contactHr = $("#hidden-break");
 var footerDiv = $(".footer");
 var portfolioFooter = $("#portfolio-footer");
 var contactFooter = $("#contact-footer");
@@ -42,6 +43,7 @@ function responsiveBackground(){
         } else if (updatedTheme === "dark") {
             moon.css("display", "inline-block");
         }
+        contactHr.addClass("hide");
     } else {
         background.css("width", "400px");
         background.css("height", "300px");
@@ -49,6 +51,7 @@ function responsiveBackground(){
         sun.css("display", "none");
         moon.css("display", "none");
         clouds.css("display", "none");
+        contactHr.removeClass("hide");
     }
 }
 
