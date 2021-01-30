@@ -14,6 +14,8 @@ var bannerDiv = $("#bg-outer");
 var themeBtnDiv = $("#theme-div");
 var navLinks = $(".nav-link");
 
+var indexNavToggler = $("#index-nav-toggler");
+var indexNav = $("#index-navbar");
 var portfolioNav = $("#portfolio-navbar");
 var contactNav = $("#contact-navbar");
 
@@ -137,6 +139,38 @@ function renderTheme() {
 function storeTheme() {
     localStorage.setItem("theme", theme);
 }
+
+var toggleStatus = "closed";
+indexNavToggler.on("click", function(){
+    if (toggleStatus === "closed") {
+        toggleStatus = "open";
+        if (updatedTheme === "dawn" || updatedTheme === null) {
+            indexNav.css("background", "#FFE8EF");
+        } else if (updatedTheme === "day") {
+            indexNav.css("background", "#95E4EC");
+        } else if (updatedTheme === "dusk") {
+            indexNav.css("background", "#FFE76C");
+        } else if (updatedTheme === "dark") {
+            indexNav.css("background", "#08366D");
+        } else {
+            indexNav.css("background", "#BDA5A0");
+        }
+    } else {
+        toggleStatus = "closed";
+        if (updatedTheme === "dawn" || updatedTheme === null) {
+            indexNav.css("background", "none");
+        } else if (updatedTheme === "day") {
+            indexNav.css("background", "none");
+        } else if (updatedTheme === "dusk") {
+            indexNav.css("background", "none");
+        } else if (updatedTheme === "dark") {
+            indexNav.css("background", "none");
+        } else {
+            indexNav.css("background", "none");
+        }
+    }
+    var updatedTheme = localStorage.getItem("theme");
+})
 
 dawnBtn.on("click", function(event){
     event.preventDefault();

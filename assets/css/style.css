@@ -504,8 +504,8 @@ body {
 }
 
 nav ul {
-    margin-right: 100px;
     font-family: 'Raleway', sans-serif;
+    text-align: center;
 }
 
 /* container */
