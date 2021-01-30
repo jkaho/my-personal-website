@@ -508,6 +508,10 @@ nav ul {
     text-align: center;
 }
 
+.nav-link:hover {
+    font-weight: bold;
+}
+
 /* container */
 main {
     position: relative;
@@ -542,9 +546,6 @@ footer {
     padding-top: 2rem;
 }
 
-.footer span {
-    color:rgb(177, 75, 75);
-}
 /* footer .container {
     width: auto;
     padding: 0 15px;
@@ -558,6 +559,17 @@ footer .made-by {
     font-family: 'Raleway', sans-serif;
     padding-top: 5px;
 } */
+
+/* next and previous page buttons */
+.arrow-btn {
+    border: none;
+    color: rgb(9, 80, 128);
+    background: none;
+}
+
+.arrow-btn:hover {
+    font-weight: bold;
+}
 
 /* -ABOUT ME PAGE- */
 
