@@ -574,6 +574,14 @@ footer .made-by {
     padding-bottom: 85px;
 }
 
+/* next page arrow */
+#portfolio-arrow {
+    position: absolute;
+    top: 320px;
+    right: 50px;
+    z-index: 11;
+}
+
 /* -PORTFOLIO PAGE- */
 
 /* project headings */
