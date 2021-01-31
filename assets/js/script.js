@@ -1,10 +1,14 @@
+// local storage variable
 var theme = "";
 
+// html elements 
 var background = $("#bg");
 var outerBackground = $("#bg-outer");
+
 var sun = $("#sun");
 var moon = $("#moon");
 var clouds = $("#clouds");
+
 var dawnBtn = $("#dawn-btn");
 var dayBtn = $("#day-btn");
 var duskBtn = $("#dusk-btn");
@@ -12,7 +16,6 @@ var darkBtn = $("#dark-btn");
 var doomBtn = $("#doom-btn");
 var bannerDiv = $("#bg-outer");
 var themeBtnDiv = $("#theme-div");
-var navLinks = $(".nav-link");
 
 var nameDiv = $("#name-div");
 var nameImg = $("#name-img");
@@ -21,6 +24,7 @@ var indexNavToggler = $("#index-nav-toggler");
 var indexNav = $("#index-navbar");
 var portfolioNav = $("#portfolio-navbar");
 var contactNav = $("#contact-navbar");
+var navLinks = $(".nav-link");
 
 var contactHr = $("#hidden-break");
 var footerDiv = $(".footer");
@@ -30,14 +34,15 @@ var indexSpan = $("#index-span");
 var portfolioSpan = $("#portfolio-span");
 var contactSpan = $("#contact-span");
 
+// fade out loader 
 $(window).on("load", function(){
     $(".loader-wrapper").fadeOut("slow");
 })
 
 renderTheme();
-
 responsiveBackground();
 
+// header banner (index.html) changes size at specific breakpoints
 function responsiveBackground(){
     if ($(window).width() > 768) {
         var updatedTheme = localStorage.getItem("theme");
@@ -70,6 +75,7 @@ function responsiveBackground(){
 
 $(window).on("resize", responsiveBackground);
 
+// page colours are rendered according to last clicked theme
 function renderTheme() {
     var updatedTheme = localStorage.getItem("theme");
     if (updatedTheme === "dawn" || updatedTheme === null) {
@@ -162,10 +168,12 @@ function renderTheme() {
     }
 }
 
+// save theme to local storage
 function storeTheme() {
     localStorage.setItem("theme", theme);
 }
 
+// change colour of navbar dropdown on toggle icon click (index.html)
 var toggleStatus = "closed";
 indexNavToggler.on("click", function(){
     var updatedTheme = localStorage.getItem("theme");
@@ -199,6 +207,7 @@ indexNavToggler.on("click", function(){
     var updatedTheme = localStorage.getItem("theme");
 })
 
+// dawn theme 
 dawnBtn.on("click", function(event){
     event.preventDefault();
 
@@ -236,15 +245,6 @@ dawnBtn.on("click", function(event){
         background.attr("style", 
         "background: url('./assets/images/general/bg-dawn.png'); background-size: contain; background-repeat: no-repeat"
         );
-        // if ($(window).width() > 768) {
-        //     background.css("width", "600");
-        //     background.css("height", "450");
-        // } else {
-        //     background.css("width", "80%");
-        //     background.css("height", "0")
-        //     background.css("padding-top", "60%");
-        // }
-
         sun.attr("style", 
         "position: absolute; top: 175px; left: 380px; background: url('./assets/images/general/bg-dawn-sun.png'); background-size: contain; background-repeat: no-repeat; width: 200px; z-index: 1"
         );
@@ -257,6 +257,7 @@ dawnBtn.on("click", function(event){
     }, 2000) 
 })
 
+// day theme
 dayBtn.on("click", function(event){
     event.preventDefault();
 
@@ -290,14 +291,6 @@ dayBtn.on("click", function(event){
         background.attr("style", 
         "background: url('./assets/images/general/bg-day.png'); background-size: contain; background-repeat: no-repeat"
         );
-        // if ($(window).width() > 768) {
-        //     background.css("width", "600");
-        //     background.css("height", "450");
-        // } else {
-        //     background.css("width", "80%");
-        //     background.css("height", "0")
-        //     background.css("padding-top", "60%");
-        // }
         sun.attr("style", 
         "position: absolute; top: 30px; left: 100px; background: url('./assets/images/general/bg-day-sun.png'); background-size: contain; background-repeat: no-repeat; width: 200px; z-index: 1"
         );
@@ -314,6 +307,7 @@ dayBtn.on("click", function(event){
     }, 2000) 
 })
 
+// dusk theme
 duskBtn.on("click", function(event){
     event.preventDefault();
 
@@ -350,14 +344,6 @@ duskBtn.on("click", function(event){
         background.attr("style", 
         "background: url('./assets/images/general/bg-dusk.png'); background-size: contain; background-repeat: no-repeat"
         );
-        // if ($(window).width() > 768) {
-        //     background.css("width", "600");
-        //     background.css("height", "450");
-        // } else {
-        //     background.css("width", "80%");
-        //     background.css("height", "0")
-        //     background.css("padding-top", "60%");
-        // }
         sun.attr("style", 
         "position: absolute; top: 350px; left: 55px; background: url('./assets/images/general/bg-dusk-sun.png'); background-size: contain; background-repeat: no-repeat; width: 200px; z-index: 1"
         );
@@ -371,6 +357,7 @@ duskBtn.on("click", function(event){
     }, 2000) 
 })
 
+// dark theme 
 darkBtn.on("click", function(event){
     event.preventDefault();
 
@@ -430,15 +417,6 @@ darkBtn.on("click", function(event){
         background.attr("style", 
         "background: url('./assets/images/general/bg-dark.png'); background-size: contain; background-repeat: no-repeat"
         );
-        // if ($(window).width() > 768) {
-        //     background.css("width", "600");
-        //     background.css("height", "450");
-        // } else {
-        //     background.css("width", "80%");
-        //     background.css("height", "0")
-        //     background.css("padding-top", "60%");
-        // }
-
         moon.attr("style", 
         "position: absolute; top: 20px; left: 15vw; background: url('./assets/images/general/bg-dark-moon.png'); background-size: contain; background-repeat: no-repeat; width: 100px; z-index: 1"
         );
@@ -452,6 +430,7 @@ darkBtn.on("click", function(event){
     }, 2000) 
 })
 
+// doom theme
 doomBtn.on("click", function(event){
     event.preventDefault();
 
@@ -488,14 +467,6 @@ doomBtn.on("click", function(event){
         background.attr("style", 
         "background: url('./assets/images/general/bg-doom.png'); background-size: contain; background-repeat: no-repeat"
         );
-        // if ($(window).width() > 768) {
-        //     background.css("width", "600");
-        //     background.css("height", "450");
-        // } else {
-        //     background.css("width", "80%");
-        //     background.css("height", "0")
-        //     background.css("padding-top", "60%");
-        // }
         sun.attr("style", 
         "position: absolute; top: 30px; left: 100px; background: url('./assets/images/general/bg-doom-sun.png'); background-size: contain; background-repeat: no-repeat; width: 200px; z-index: 1"
         );
@@ -508,5 +479,3 @@ doomBtn.on("click", function(event){
         darkBtn.attr("disabled", false);
     }, 2000) 
 })
-
-
