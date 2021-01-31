@@ -30,6 +30,10 @@ var indexSpan = $("#index-span");
 var portfolioSpan = $("#portfolio-span");
 var contactSpan = $("#contact-span");
 
+$(window).on("load", function(){
+    $(".loader-wrapper").fadeOut("slow");
+})
+
 renderTheme();
 
 responsiveBackground();
@@ -40,7 +44,7 @@ function responsiveBackground(){
         background.css("width", "600px");
         background.css("height", "450px");
         outerBackground.css("height", "450px");
-        nameDiv.attr("style", "position: absolute; top: 220px; left: 200px; z-index: 12");
+        nameDiv.attr("style", "position: absolute; top: 220px; left: 200px; z-index: 11");
         nameImg.attr("style", "width: 240px; height: 80px");
         sun.css("display", "inline-block");
         if (updatedTheme === "day") {
@@ -53,7 +57,7 @@ function responsiveBackground(){
         background.css("width", "400px");
         background.css("height", "300px");
         outerBackground.css("height", "300px");
-        nameDiv.attr("style", "position: absolute; top: 150px; left: 150px; z-index: 12");
+        nameDiv.attr("style", "position: absolute; top: 150px; left: 150px; z-index: 11");
         nameImg.attr("style", "width: 180px; height: 60px");
         sun.css("display", "none");
         moon.css("display", "none");
