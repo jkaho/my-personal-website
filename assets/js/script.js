@@ -16,6 +16,7 @@ var navLinks = $(".nav-link");
 
 var nameDiv = $("#name-div");
 var nameImg = $("#name-img");
+var nameHeader = $(".name-header");
 var indexNavToggler = $("#index-nav-toggler");
 var indexNav = $("#index-navbar");
 var portfolioNav = $("#portfolio-navbar");
@@ -67,6 +68,7 @@ function renderTheme() {
     var updatedTheme = localStorage.getItem("theme");
     if (updatedTheme === "dawn" || updatedTheme === null) {
         nameImg.attr("src", "./assets/images/general/name-dawn.png");
+        nameHeader.attr("src", "./assets/images/general/name-dawn-2.png");
         footerDiv.css("background", "#FFE8EF");
         indexSpan.css("color", "rgb(177, 75, 75)");
         portfolioFooter.css("background", "#FFE8EF");
@@ -83,6 +85,7 @@ function renderTheme() {
         background.attr("class", "dawn");
     } else if (updatedTheme === "day") {
         nameImg.attr("src", "./assets/images/general/name-day.png");
+        nameHeader.attr("src", "./assets/images/general/name-day-2.png");
         footerDiv.css("background", "#95E4EC");
         indexSpan.css("color", "#2f7b96");
         portfolioFooter.css("background", "#95E4EC");
@@ -100,6 +103,7 @@ function renderTheme() {
         background.attr("class", "day");
     } else if (updatedTheme === "dusk") {
         nameImg.attr("src", "./assets/images/general/name-white.png");
+        nameHeader.attr("src", "./assets/images/general/name-dusk.png");
         footerDiv.css("background", "#FFE76C");
         indexSpan.css("color", "#c48900");
         portfolioFooter.css("background", "#FFE76C");
@@ -116,6 +120,7 @@ function renderTheme() {
         background.attr("class", "dusk");
     } else if (updatedTheme === "dark") {
         nameImg.attr("src", "./assets/images/general/name-white.png");
+        nameHeader.attr("src", "./assets/images/general/name-dark.png");
         footerDiv.css("background", "#08366D");
         indexSpan.css("color", "white");
         portfolioFooter.css("background", "#08366D");
@@ -133,6 +138,7 @@ function renderTheme() {
         background.attr("class", "dark");
     } else {
         nameImg.attr("src", "./assets/images/general/name-white.png");
+        nameHeader.attr("src", "./assets/images/general/name-doom.png");
         footerDiv.css("background", "#BDA5A0");
         indexSpan.css("color", "#66442c");
         portfolioFooter.css("background", "#BDA5A0");
