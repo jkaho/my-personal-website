@@ -2,15 +2,15 @@
 
 ## Description
 
-This repository contains the source code for my first basic personal website. It includes an ‘About Me’ page, a ‘Portfolio’ page, and a ‘Contact Me’ page. Please note that this is not a complete website. 
+This repository contains the source code for my portfolio website. It includes an ‘About Me’ page, a ‘Portfolio’ page, and a ‘Contact Me’ page.
 
 ## Motivations
 
-The main objective of this project was to create the foundation of a personal website with a responsive layout by utilising the Bootstrap grid system to ensure consistent appearance and functionality across various viewports. 
+The main objective of this project is to develop and maintain a personal website containing personal/contact information, as well as information about projects that I have completed. 
 
 ## Screenshots 
 
-The following screenshots show the appearance of each webpage viewed from three different devices. 
+The following screenshots show the appearance of each webpage viewed from three different viewport sizes. 
 
 ### About Me
 

@@ -730,6 +730,10 @@ form {
     margin: 1px;
 }
 
+#hidden-resume {
+    font-family: 'Raleway', sans-serif;
+}
+
 /* previous page btn */
 
 #portfolio-arrow-back {
