@@ -649,8 +649,11 @@ footer {
     margin: 25px;
 }
 
-/* previous and next page arrows */
+.fa-github, .github-link {
+    color: rgb(29, 103, 194);
+}
 
+/* previous and next page arrows */
 #portfolio-arrows {
     padding-top: 1rem;
 }
