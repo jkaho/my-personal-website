@@ -748,13 +748,23 @@ form {
 
 /* ---------------------MEDIA QUERIES--------------------- */
 
+/* small devices (phones, 500px and down) */
+@media (max-width: 500px) {
+    #bg, #bg-inner {
+        height: 240px;
+        width: 320px;
+    }
+}
+
 /* medium devices (tablets, 768px and down) */
-@media (max-width: 768px) { 
+@media (min-width: 500px) and (max-width: 768px) { 
     #bg, #bg-inner {
         height: 300px;
         width: 400px;
     }
+}
 
+@media (max-width: 768px) { 
     /* general styles */
     nav img {
         width: 200px;

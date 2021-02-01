@@ -59,11 +59,22 @@ function responsiveBackground(){
             moon.css("display", "inline-block");
         }
         contactHr.addClass("hide");
-    } else {
+    } else if ($(window).width() > 500 && $(window).width() <= 768) {
         background.css("width", "400px");
         background.css("height", "300px");
         outerBackground.css("height", "300px");
         nameDiv.attr("style", "position: absolute; top: 150px; left: 150px; z-index: 11");
+        nameImg.attr("style", "width: 180px; height: 60px");
+        nameHeader.attr("style", "width: 180px; height: 55px");
+        sun.css("display", "none");
+        moon.css("display", "none");
+        clouds.css("display", "none");
+        contactHr.removeClass("hide");
+    } else {
+        background.css("width", "320px");
+        background.css("height", "240px");
+        outerBackground.css("height", "240px");
+        nameDiv.attr("style", "position: absolute; top: 110px; left: 100px; z-index: 11");
         nameImg.attr("style", "width: 180px; height: 60px");
         nameHeader.attr("style", "width: 180px; height: 55px");
         sun.css("display", "none");
