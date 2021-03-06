@@ -624,10 +624,6 @@ footer {
     text-align: center;
 }
 
-/* #project-2 h3 {
-    padding-left: 470px;
-} */
-
 /* images */
 .float-left img {
     float: left;
@@ -851,11 +847,7 @@ form {
         text-align: center;
         padding-left: 0;
     }
-
-    #project-2 h3 {
-        padding-left: 0;
-    }
-
+    
     .project p {
         margin: 0;
         padding-top: 25px;
