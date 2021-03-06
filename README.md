@@ -6,7 +6,11 @@ This repository contains the source code for my portfolio website. It includes a
 
 ## Motivations
 
-The main objective of this project is to develop and maintain a personal website containing personal/contact information, as well as information about projects that I have completed. 
+The main objective of this project is to develop and maintain a personal website containing personal/contact information, as well as information about projects that I have completed so that I can showcase what I've learned on my web development journey. 
+
+## Link
+
+[Link to deployed application](https://jkaho.github.io/my-personal-website/)
 
 ## Screenshots 
 
@@ -54,6 +58,3 @@ The following screenshots show the appearance of each webpage viewed from three 
 
 !['Contact Me' page on portrait phone](/assets/images/readme/contact-me-375.png)
 
-## Link
-
-[Link to deployed application](https://jkaho.github.io/my-personal-website/)
