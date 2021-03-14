@@ -592,23 +592,37 @@ footer {
     margin-bottom: 4rem;
 }
 
-/* heading */
+/* headings */
 #about-me h1 {
     font-size: 45px;
 }
 
-/* image */
-#about-me img {
+#skills-heading {
+    font-weight: 300;
+    text-align: center;
+}
+
+/* images */
+#me {
     display: block;
     margin: 20px auto;
     border-radius: 100%;
 }
 
+#me-computer {
+    float: right;
+}
+
 /* text */
 #about-me p {
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 1rem;
+    padding-top: 20px;
+    padding-bottom: 2.5rem;
+}
+
+#about-me #skills {
+    padding-top: 50px;
+    text-align: left;
 }
 
 /* next page arrow */
@@ -779,7 +793,7 @@ form {
     }
 
     /* about me page */
-    #about-me img {
+    #me {
         width: 200px;
         height: 200px;
         margin: 0 auto;
