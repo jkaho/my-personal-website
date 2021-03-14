@@ -907,7 +907,7 @@ form {
 }
 
 /* medium devices (tablets, 768px and down) */
-@media (min-width: 500px) and (max-width: 768px) { 
+@media (min-width: 500px) and (max-width: 767px) { 
     #bg, #bg-inner {
         height: 300px;
         width: 400px;
@@ -934,7 +934,7 @@ form {
     }
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 767px) { 
     /* general styles */
     nav img {
         width: 200px;

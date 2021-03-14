@@ -44,7 +44,7 @@ responsiveBackground();
 
 // header banner (index.html) changes size at specific breakpoints
 function responsiveBackground(){
-    if ($(window).width() > 768) {
+    if ($(window).width() > 767) {
         var updatedTheme = localStorage.getItem("theme");
         background.css("width", "600px");
         background.css("height", "450px");
@@ -59,7 +59,7 @@ function responsiveBackground(){
             moon.css("display", "inline-block");
         }
         contactHr.addClass("hide");
-    } else if ($(window).width() > 500 && $(window).width() <= 768) {
+    } else if ($(window).width() > 500 && $(window).width() <= 767) {
         background.css("width", "400px");
         background.css("height", "300px");
         outerBackground.css("height", "300px");
