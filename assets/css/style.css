@@ -620,10 +620,109 @@ footer {
     padding-bottom: 2.5rem;
 }
 
+/* skills section */
 #about-me #skills {
     padding-top: 50px;
+    padding-bottom: 0;
     text-align: left;
 }
+
+.inner-skill {
+    padding: 20px;
+    background-color: rgb(255, 242, 242);
+    border-radius: 5px;
+}
+
+.inner-skill h5 {
+    text-align: center;
+}
+
+.skill-lists {
+    font-size: 15px;
+    list-style-type: none;
+    padding: 0;
+}
+
+/* ----https://www.w3schools.com/howto/howto_css_browser_window.asp---- */
+/* The browser window */
+.window {
+    border: 3px solid #f1f1f1;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  
+  /* Container for columns and the top "toolbar" */
+  .window-row {
+    padding: 5px;
+    background: #f1f1f1;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    height: 25px;
+  }
+  
+  /* Create three unequal columns that floats next to each other */
+  .column {
+    float: left;
+  }
+  
+  .left {
+    width: 20%;
+  }
+  
+  .right {
+    width: 10%;
+  }
+  
+  .middle {
+    width: 68%;
+    margin-right: 3px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Three dots */
+  .dot {
+    margin-top: 4px;
+    height: 7px;
+    width: 7px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  /* Style the input field */
+  #window-input {
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    background-color: white;
+    height: 15px;
+    color: #666;
+    padding: 5px;
+    vertical-align: top;
+  }
+  
+  /* Three bars */
+  .bar {
+    width: 12px;
+    height: 2px;
+    background-color: #aaa;
+    margin: 2px 0;
+    display: block;
+  }
+  
+  /* Page content */
+  .content {
+    padding: 10px;
+  }
+
+/* ----------------------------------------------------- */
 
 /* next page arrow */
 #portfolio-arrow {
