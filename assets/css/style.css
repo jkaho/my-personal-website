@@ -38,6 +38,8 @@ html {
 }
 
 body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
     position: relative;
     min-height: 100%;
 }
@@ -589,7 +591,7 @@ footer {
 }
 
 #about-me {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 /* headings */
@@ -597,9 +599,13 @@ footer {
     font-size: 45px;
 }
 
-#skills-heading {
+#skills-heading, #design-heading {
     font-weight: 300;
     text-align: center;
+}
+
+#design-heading {
+    margin-top: 80px;
 }
 
 /* images */
@@ -609,20 +615,20 @@ footer {
     border-radius: 100%;
 }
 
-#me-computer {
+#me-computer, #responsiveness-img {
     float: right;
 }
 
 /* text */
-#about-me p {
+#aboutme-text {
     text-align: center;
     padding-top: 20px;
-    padding-bottom: 2.5rem;
+    padding-bottom: 75px;
 }
 
 /* skills section */
 #about-me #skills {
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 0;
     text-align: left;
 }
@@ -742,6 +748,14 @@ footer {
 #backend-content {
     color: rgb(247, 245, 245);
     background-color: rgb(38, 36, 36);
+}
+
+/* design section */
+
+#responsiveness-text {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: left;
 }
 
 /* next page arrow */
@@ -897,6 +911,26 @@ form {
     #bg, #bg-inner {
         height: 300px;
         width: 400px;
+    }
+
+    #me-computer, #responsiveness-img {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    #about-me #skills, #responsiveness-text {
+        text-align: center;
+    }
+
+    .window {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #backend-window {
+        margin-top: 20px;
     }
 }
 
