@@ -649,44 +649,45 @@ footer {
     border: 3px solid #f1f1f1;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+    overflow: auto;
   }
-  
-  /* Container for columns and the top "toolbar" */
-  .window-row {
+
+/* Container for columns and the top "toolbar" */
+.window-row {
     padding: 5px;
     background: #f1f1f1;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     height: 25px;
-  }
-  
-  /* Create three unequal columns that floats next to each other */
-  .column {
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
     float: left;
-  }
-  
-  .left {
+}
+
+.left {
     width: 20%;
-  }
-  
-  .right {
+}
+
+.right {
     width: 10%;
-  }
-  
-  .middle {
+}
+
+.middle {
     width: 68%;
     margin-right: 3px;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
+}
+
+/* Clear floats after the columns */
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
-  
-  /* Three dots */
-  .dot {
+}
+
+/* Three dots */
+.dot {
     margin-top: 4px;
     height: 7px;
     width: 7px;
@@ -694,10 +695,10 @@ footer {
     border-radius: 50%;
     display: inline-block;
     vertical-align: top;
-  }
-  
-  /* Style the input field */
-  #window-input {
+}
+
+/* Style the input field */
+#window-input {
     width: 100%;
     border-radius: 3px;
     border: none;
@@ -706,23 +707,42 @@ footer {
     color: #666;
     padding: 5px;
     vertical-align: top;
-  }
-  
-  /* Three bars */
-  .bar {
+}
+
+/* Three bars */
+.bar {
     width: 12px;
     height: 2px;
     background-color: #aaa;
     margin: 2px 0;
     display: block;
-  }
-  
+}
+
   /* Page content */
-  .content {
+.content {
+    font-family: 'Raleway', sans-serif;
     padding: 10px;
-  }
+}
 
 /* ----------------------------------------------------- */
+
+.content h5 {
+    text-align: center;
+}
+
+#backend-window {
+    background-color: rgb(75, 73, 73);
+    border: 3px solid rgb(75, 73, 73);
+}
+
+#backend-window-row {
+    background-color: rgb(75, 73, 73);
+}
+
+#backend-content {
+    color: rgb(247, 245, 245);
+    background-color: rgb(38, 36, 36);
+}
 
 /* next page arrow */
 #portfolio-arrow {
