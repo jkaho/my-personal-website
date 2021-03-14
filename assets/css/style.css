@@ -591,6 +591,12 @@ footer {
 #about-me {
     margin-bottom: 4rem;
 }
+
+/* heading */
+#about-me h1 {
+    font-size: 45px;
+}
+
 /* image */
 #about-me img {
     display: block;
@@ -600,6 +606,7 @@ footer {
 
 /* text */
 #about-me p {
+    text-align: center;
     padding-top: 30px;
     padding-bottom: 1rem;
 }
@@ -777,10 +784,6 @@ form {
         height: 200px;
         margin: 0 auto;
         padding: 10px;
-    }
-
-    #about-me p {
-        text-align: center;
     }
 
     /* portfolio page */
