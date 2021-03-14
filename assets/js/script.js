@@ -51,7 +51,7 @@ function responsiveBackground(){
         outerBackground.css("height", "450px");
         nameDiv.attr("style", "position: absolute; top: 220px; left: 200px; z-index: 11");
         nameImg.attr("style", "width: 240px; height: 80px");
-        nameHeader.attr("style", "width: 240px; height: 75px");
+        nameHeader.attr("style", "width: 200px; height: 75px");
         sun.css("display", "inline-block");
         if (updatedTheme === "day") {
             clouds.css("display", "inline-block");
@@ -65,7 +65,7 @@ function responsiveBackground(){
         outerBackground.css("height", "300px");
         nameDiv.attr("style", "position: absolute; top: 150px; left: 150px; z-index: 11");
         nameImg.attr("style", "width: 180px; height: 60px");
-        nameHeader.attr("style", "width: 180px; height: 55px");
+        nameHeader.attr("style", "width: 150px; height: 55px");
         sun.css("display", "none");
         moon.css("display", "none");
         clouds.css("display", "none");
@@ -76,7 +76,7 @@ function responsiveBackground(){
         outerBackground.css("height", "240px");
         nameDiv.attr("style", "position: absolute; top: 110px; left: 100px; z-index: 11");
         nameImg.attr("style", "width: 180px; height: 60px");
-        nameHeader.attr("style", "width: 180px; height: 55px");
+        nameHeader.attr("style", "width: 150px; height: 55px");
         sun.css("display", "none");
         moon.css("display", "none");
         clouds.css("display", "none");
