@@ -815,13 +815,17 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
+    cursor: pointer;
 }
 
 .overlay {
     visibility: hidden;
     z-index: 10;
     padding: 10px;
-    background-color: rgb(255, 255, 255, 0.8);
+    color: white;
+    font-weight: 700;
+    /* background-color: rgb(255, 255, 255, 0.8); */
+    background: rgb(255, 155, 171, 0.9);
     text-align: center;
     font-weight: 500;
 }
