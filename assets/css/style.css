@@ -822,17 +822,23 @@ footer {
     visibility: hidden;
     z-index: 10;
     padding: 10px;
-    color: white;
+    color: rgb(167, 62, 80);
     font-weight: 700;
     /* background-color: rgb(255, 255, 255, 0.8); */
-    background: rgb(255, 155, 171, 0.9);
-    text-align: center;
+    background: rgba(255, 200, 209, 0.9);
+    /* text-align: center; */
     font-weight: 500;
 }
 
 .overlay ul {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
     list-style-type: none;
     padding-left: 10px;
+}
+
+.fa-check-circle {
+    color: rgb(167, 62, 80);
 }
 
 .fa-github, .github-link {
