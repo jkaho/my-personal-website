@@ -543,7 +543,7 @@ main {
 }
 
 main .container {
-    padding: 2.5rem 0 8rem 0;
+    padding: 2.5rem 0 10rem 0;
     margin: 0 auto;
 }
 
@@ -559,14 +559,26 @@ h1 {
 /* sticky footer */
 footer {
     font-family: 'Raleway', sans-serif;
-    height: 5rem;
+    height: 7rem;
     width: 100%;
     position: absolute;
     bottom: 0;
     z-index: 11;
     background-color: #FFE8EF;
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
+}
+
+footer .made-by-me {
+    position: absolute;
+    bottom: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+footer #portfolio-span {
+    width: fit-content;
+    margin: 0 auto;
 }
 
 /* next and previous page buttons */
@@ -777,7 +789,6 @@ footer {
 }
 
 /* images */
-
 .project img {
     border: solid 1px #e6e2e2;
     /* box-shadow: -10px 10px  #fcefd6; */
@@ -789,7 +800,7 @@ footer {
 }
 
 .project p {
-    padding-top: 50px;
+    padding-top: 30px;
     margin: 25px;
     margin-left: 0;
 }
@@ -852,14 +863,14 @@ footer {
 
 #contact-arrow {
     position: absolute;
-    bottom: 110px;
+    bottom: 9rem;
     right: 50px;
     z-index: 11;
 }
 
 #aboutme-arrow {
     position: absolute;
-    bottom: 110px;
+    bottom: 9rem;
     left: 50px;
     z-index: 11;
 }
@@ -930,10 +941,9 @@ form {
 }
 
 /* previous page btn */
-
 #portfolio-arrow-back {
     position: absolute;
-    bottom: 100px;
+    bottom: 9rem;
     left: 50px;
     z-index: 11;
 }

@@ -33,6 +33,7 @@ var contactFooter = $("#contact-footer");
 var indexSpan = $("#index-span");
 var portfolioSpan = $("#portfolio-span");
 var contactSpan = $("#contact-span");
+var socialMediaLinks = $(".social-media-footer a");
 
 // fade out loader 
 $(window).on("load", function(){
@@ -95,7 +96,8 @@ function renderTheme() {
         footerDiv.css("background", "#FFE8EF");
         indexSpan.css("color", "rgb(177, 75, 75)");
         portfolioFooter.css("background", "#FFE8EF");
-        portfolioSpan.css("color", "rgb(177, 75, 75)")
+        socialMediaLinks.css("color", "rgb(177, 75, 75)");
+        portfolioSpan.css("color", "rgb(177, 75, 75)");
         contactFooter.css("background", "#FFE8EF");
         contactSpan.css("color", "rgb(177, 75, 75)");
         navLinks.css("color", "rgb(177, 75, 75)");
@@ -112,6 +114,7 @@ function renderTheme() {
         footerDiv.css("background", "#95E4EC");
         indexSpan.css("color", "#2f7b96");
         portfolioFooter.css("background", "#95E4EC");
+        socialMediaLinks.css("color", "#2f7b96");
         portfolioSpan.css("color", "#2f7b96");
         contactFooter.css("background", "#95E4EC");
         contactSpan.css("color", "#2f7b96");
@@ -130,6 +133,7 @@ function renderTheme() {
         footerDiv.css("background", "#FFE76C");
         indexSpan.css("color", "#c48900");
         portfolioFooter.css("background", "#FFE76C");
+        socialMediaLinks.css("color", "#c48900");
         portfolioSpan.css("color", "#c48900");
         contactFooter.css("background", "#FFE76C");
         contactSpan.css("color", "#c48900");
@@ -147,6 +151,7 @@ function renderTheme() {
         footerDiv.css("background", "#08366D");
         indexSpan.css("color", "white");
         portfolioFooter.css("background", "#08366D");
+        socialMediaLinks.css("color", "white");
         portfolioSpan.css("color", "white");
         contactFooter.css("background", "#08366D");
         contactSpan.css("color", "white");
@@ -165,6 +170,7 @@ function renderTheme() {
         footerDiv.css("background", "#BDA5A0");
         indexSpan.css("color", "#66442c");
         portfolioFooter.css("background", "#BDA5A0");
+        socialMediaLinks.css("color", "#66442c");
         portfolioSpan.css("color", "#66442c");
         contactFooter.css("background", "#BDA5A0");
         contactSpan.css("color", "#66442c");
@@ -228,6 +234,7 @@ dawnBtn.on("click", function(event){
     themeBtnDiv.css("background", "rgb(177, 75, 75)");
     footerDiv.css("background", "#FFE8EF");
     indexSpan.css("color", "rgb(177, 75, 75)");
+    socialMediaLinks.css("color", "rgb(177, 75, 75)");
     navLinks.css("color", "rgb(177, 75, 75)");
     nameImg.attr("src", "./assets/images/general/name-dawn.png");
 
@@ -278,6 +285,7 @@ dayBtn.on("click", function(event){
     themeBtnDiv.css("background", "rgb(75, 121, 177)");
     footerDiv.css("background", "#95E4EC");
     indexSpan.css("color", "#2f7b96");
+    socialMediaLinks.css("color", "#2f7b96");
     navLinks.css("color", "#2f7b96");
     nameImg.attr("src", "./assets/images/general/name-day.png");
 
@@ -328,6 +336,7 @@ duskBtn.on("click", function(event){
     themeBtnDiv.css("background", "rgb(225, 153, 45)");
     footerDiv.css("background", "#FFE76C");
     indexSpan.css("color", "#c48900");
+    socialMediaLinks.css("color", "#c48900");
     navLinks.css("color", "#c48900");
     nameImg.attr("src", "./assets/images/general/name-white.png");
 
@@ -378,6 +387,7 @@ darkBtn.on("click", function(event){
     themeBtnDiv.css("background", "rgb(124, 125, 171)");
     footerDiv.css("background", "#08366D");
     indexSpan.css("color", "white");
+    socialMediaLinks.css("color", "white");
     navLinks.css("color", "white");
     nameImg.attr("src", "./assets/images/general/name-white.png");
 
@@ -451,6 +461,7 @@ doomBtn.on("click", function(event){
     themeBtnDiv.css("background", "rgb(69, 67, 67)");
     footerDiv.css("background", "#BDA5A0");
     indexSpan.css("color", "#66442c");
+    socialMediaLinks.css("color", "#66442c");
     navLinks.css("color", "#66442c");
     nameImg.attr("src", "./assets/images/general/name-white.png");
 
