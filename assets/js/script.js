@@ -25,6 +25,9 @@ var indexNav = $("#index-navbar");
 var portfolioNav = $("#portfolio-navbar");
 var contactNav = $("#contact-navbar");
 var navLinks = $(".nav-link");
+var aboutMeLink = $("#aboutme-nav");
+var portfolioLink = $("#portfolio-nav");
+var contactLink = $("#contact-nav");
 
 var contactHr = $("#hidden-break");
 var footerDiv = $(".footer");
@@ -101,6 +104,9 @@ function renderTheme() {
         contactFooter.css("background", "#FFE8EF");
         contactSpan.css("color", "rgb(177, 75, 75)");
         navLinks.css("color", "rgb(177, 75, 75)");
+        aboutMeLink.css("border-bottom", "solid 5px rgb(177, 75, 75)");
+        portfolioLink.css("border-bottom", "solid 5px rgb(177, 75, 75)");
+        contactLink.css("border-bottom", "solid 5px rgb(177, 75, 75)");
         portfolioNav.css("background", "#FFE8EF");
         contactNav.css("background", "#FFE8EF");
         themeBtnDiv.css("background", "rgb(177, 75, 75)");
@@ -119,6 +125,9 @@ function renderTheme() {
         contactFooter.css("background", "#95E4EC");
         contactSpan.css("color", "#2f7b96");
         navLinks.css("color", "#2f7b96");
+        aboutMeLink.css("border-bottom", "solid 5px #2f7b96");
+        portfolioLink.css("border-bottom", "solid 5px #2f7b96");
+        contactLink.css("border-bottom", "solid 5px #2f7b96");
         portfolioNav.css("background", "#95E4EC");
         contactNav.css("background", "#95E4EC");
         themeBtnDiv.css("background", "rgb(75, 121, 177)");
@@ -138,6 +147,9 @@ function renderTheme() {
         contactFooter.css("background", "#FFE76C");
         contactSpan.css("color", "#c48900");
         navLinks.css("color", "#c48900");
+        aboutMeLink.css("border-bottom", "solid 5px #c48900");
+        portfolioLink.css("border-bottom", "solid 5px #c48900");
+        contactLink.css("border-bottom", "solid 5px #c48900");
         portfolioNav.css("background", "#FFE76C");
         contactNav.css("background", "#FFE76C");
         themeBtnDiv.css("background", "rgb(225, 153, 45)");
@@ -156,6 +168,9 @@ function renderTheme() {
         contactFooter.css("background", "#08366D");
         contactSpan.css("color", "white");
         navLinks.css("color", "white");
+        aboutMeLink.css("border-bottom", "solid 5px white");
+        portfolioLink.css("border-bottom", "solid 5px white");
+        contactLink.css("border-bottom", "solid 5px white");
         portfolioNav.css("background", "#08366D");
         contactNav.css("background", "#08366D");
         themeBtnDiv.css("background", "rgb(124, 125, 171)");
@@ -175,6 +190,9 @@ function renderTheme() {
         contactFooter.css("background", "#BDA5A0");
         contactSpan.css("color", "#66442c");
         navLinks.css("color", "#66442c");
+        aboutMeLink.css("border-bottom", "solid 5px #66442c");
+        portfolioLink.css("border-bottom", "solid 5px #66442c");
+        contactLink.css("border-bottom", "solid 5px #66442c");
         portfolioNav.css("background", "#BDA5A0");
         contactNav.css("background", "#BDA5A0");
         themeBtnDiv.css("background", "rgb(69, 67, 67)");
@@ -236,6 +254,7 @@ dawnBtn.on("click", function(event){
     indexSpan.css("color", "rgb(177, 75, 75)");
     socialMediaLinks.css("color", "rgb(177, 75, 75)");
     navLinks.css("color", "rgb(177, 75, 75)");
+    aboutMeLink.css("border-bottom", "solid 5px rgb(177, 75, 75)");
     nameImg.attr("src", "./assets/images/general/name-dawn.png");
 
     dayBtn.attr("disabled", true);
@@ -287,6 +306,7 @@ dayBtn.on("click", function(event){
     indexSpan.css("color", "#2f7b96");
     socialMediaLinks.css("color", "#2f7b96");
     navLinks.css("color", "#2f7b96");
+    aboutMeLink.css("border-bottom", "solid 5px #2f7b96");
     nameImg.attr("src", "./assets/images/general/name-day.png");
 
     dawnBtn.attr("disabled", true);
@@ -338,6 +358,7 @@ duskBtn.on("click", function(event){
     indexSpan.css("color", "#c48900");
     socialMediaLinks.css("color", "#c48900");
     navLinks.css("color", "#c48900");
+    aboutMeLink.css("border-bottom", "solid 5px #c48900");
     nameImg.attr("src", "./assets/images/general/name-white.png");
 
     dawnBtn.attr("disabled", true);
@@ -389,6 +410,7 @@ darkBtn.on("click", function(event){
     indexSpan.css("color", "white");
     socialMediaLinks.css("color", "white");
     navLinks.css("color", "white");
+    aboutMeLink.css("border-bottom", "solid 5px white");
     nameImg.attr("src", "./assets/images/general/name-white.png");
 
     dawnBtn.attr("disabled", true);
@@ -463,6 +485,7 @@ doomBtn.on("click", function(event){
     indexSpan.css("color", "#66442c");
     socialMediaLinks.css("color", "#66442c");
     navLinks.css("color", "#66442c");
+    aboutMeLink.css("border-bottom", "solid 5px #66442c");
     nameImg.attr("src", "./assets/images/general/name-white.png");
 
     dawnBtn.attr("disabled", true);

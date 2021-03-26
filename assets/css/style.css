@@ -525,13 +525,17 @@ body {
     z-index: 12;
 }
 
-
 nav ul {
     font-family: 'Raleway', sans-serif;
     text-align: center;
 }
 
 .nav-link:hover {
+    font-weight: bold;
+}
+
+#aboutme-nav, #portfolio-nav, #contact-nav {
+    padding-bottom: 2px;
     font-weight: bold;
 }
 
