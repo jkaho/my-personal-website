@@ -48,6 +48,10 @@ body {
     height: 100px;
 }
 
+.unavailable {
+  color: grey;
+}
+
 /* background image styles and animations */
 #bg-outer {
     width: 100vw;
